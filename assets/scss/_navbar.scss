@@ -1,0 +1,421 @@
+.fashionNavbar{
+    height: 80px;
+    & .fashionHeader{
+        & .navbarLogo{
+            & img{
+                height: 40px;
+            }
+        }
+        & .navDiv{
+            & .navUl{
+                & .navLi{
+                    padding: 1.25rem 0.5rem !important;
+                    &:hover .homeListdropdownlist{
+                        display: block;
+                        font-size: 15px;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                        background-color: $gray-100;
+                        border: 1px solid $gray-100;
+                        border-radius: 5px;
+                        z-index: 99;
+                        width: 100%;
+                        left: 0;
+                        padding: 20px;
+                    }
+                    &:hover .aboutListdropdownlist{
+                        display: block;
+                        font-size: 15px;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                        background-color: $gray-100;
+                        border: 1px solid $gray-100;
+                        border-radius: 5px;
+                        padding: 20px;
+                        z-index: 99;
+                    }
+                    & .navAnchor{
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    & .homeListdropdownlist{
+                        position: absolute;
+                        top: 90%;
+                        display: none;
+                        & .homeOnelist{
+                            & .lianchor{
+                                text-decoration: none;
+                                & .headerOne{
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $black;
+                                }
+                                & .listData{
+                                    margin: 10px 0 0 0;
+                                    text-decoration: none;
+                                    color: $black;
+                                }
+                            }
+                            
+                        }
+                    }
+                    & .aboutListdropdownlist{
+                        display: none;
+                        position: absolute;
+                        top: 90%;
+                        & .aboutOnelist{
+                            & .lianchor{
+                                text-decoration: none;
+                                & .headerOne{
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: $black;
+                                }
+                                & .listData{
+                                    margin: 10px 0 0 0;
+                                    text-decoration: none;
+                                    color: $black;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        & .navEndiconscontainer{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            & .navCartcontainer{
+                & img{
+                    margin: 8px;
+                    filter: brightness(0);
+                }
+            }
+            & .wishlistContainer{
+                & img{
+                    margin: 8px;
+                    filter: brightness(0);
+                }
+            }
+            & .profileContainer{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+        }
+        & .nvDropimgcontainer{
+            // width: 100%;
+            // height: 400px;
+            // overflow: hidden;
+            & img{
+                width: 100%;
+                // height: 100%;
+                // object-fit: cover;
+            }
+        }
+    }
+}
+.heroFluid{
+    width: 100%;
+    height: calc(100vh - 200px);
+    background-color: $theme1;
+    &:hover{
+        & .owl-prev {
+            display: block !important;
+        }
+        & .owl-next{
+            display: block !important;
+        }
+    }
+    & .heroContainer{
+        & .owlCarousel{
+            & .owlItem{
+                & .heroLefttxtcontainer{
+                    & .txtFirst{
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+                    & .txtSecond{
+                        font-size: 50px;
+                        font-weight: 700;
+                        color: $purple;
+                    }
+                    & .txtThird{
+                        font-size: 35px;
+                        font-weight: 700;
+                        color: $green;
+                        letter-spacing: 2px;
+                    }
+                    & .txtFourth{
+
+                    }
+                    & .shopclass{
+                        text-decoration: none;
+                        color: $green;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+                & .heroImgcontainer{
+                    width: 100%;
+                    height: 100%;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        // aspect-ratio: 10/10;
+                        object-position: top center;
+                    }
+                }
+            }
+        }
+    }
+    & .owl-nav{
+        & button {
+            &.owl-prev{
+                position: absolute;
+                top: 50%;
+                left: -7%;
+                background: lighten($color: $green, $amount: 65) !important;
+                border-radius: 50%;
+                padding: 10px !important;
+                display: flex;
+                border: 1px solid $green;
+                display: none;
+            }
+            &.owl-next{
+                position: absolute;
+                top: 50%;
+                right: -7%;
+                background: lighten($color: $green, $amount: 65) !important;
+                border-radius: 50%;
+                padding: 10px !important;
+                display: flex;
+                border: 1px solid $green;
+                display: none;
+                &:hover{
+                    // background-color: $green !important;
+                }
+            }
+        }
+        
+        & .arrowimg{
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+.minicardfluid{
+    background-color: $theme1;
+    & .minicardcontainner{
+        & .minicarddatacontainer{
+            border: 1px solid $green;
+            border-radius: 5px;
+            height: 100%;
+            width: 100%;
+            background-color: $white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s linear;
+            &:hover{
+                transform: translatey(-10px);
+            }
+            & .minicardimgcontainer{
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .minicardtxtcontainer{
+                margin-top: 20px;
+                padding: 5px;
+                background: lighten($color: $pink, $amount: 40);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .minicarsText{
+                    color: $pink;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            & .minicardtxtcontainer1{
+                margin-top: 20px;
+                padding: 5px;
+                background: lighten($color: $cyan, $amount: 40);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .minicarsText1{
+                    color: $cyan;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            & .minicardtxtcontainer2{
+                margin-top: 20px;
+                padding: 5px;
+                background: lighten($color: $green, $amount: 50);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .minicarsText2{
+                    color: $green;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            & .minicardtxtcontainer3{
+                margin-top: 20px;
+                padding: 5px;
+                background: lighten($color: $blue, $amount: 40);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .minicarsText3{
+                    color: $blue;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            & .minicardtxtcontainer4{
+                margin-top: 20px;
+                padding: 5px;
+                background: lighten($color: $purple, $amount: 40);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .minicarsText4{
+                    color: $purple;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+            & .minicardtxtcontainer5{
+                margin-top: 20px;
+                padding: 5px;
+                background: lighten($color: $orange, $amount: 40);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .minicarsText5{
+                    color: $orange;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.tabsfluid{
+    & .tabsconatiner{
+        & .tabscontent{
+            & .tab1maincontainer{ 
+                & .tab1datacontainer{
+                    & .paddingcontainer{
+                        padding: 10px;
+                        border:1px solid $gray-400;
+                        border-radius: 8px;
+                        & .cardmainconatiner{
+                            border:none ;
+                            & .card-img-top{
+                                width: 100%;
+                                height: 250px !important;
+                                border-radius: 8px;
+                            }
+                            & .imgtxtbg{
+                                position: absolute;
+                                top:2%;
+                                left: 2%;
+                                background: lighten($color: $pink, $amount: 35);
+                                padding: 5px 10px;
+                                border-radius: 5px;
+                                & .imgtxtbg{
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                            }
+                            & .cardBody{
+                                border:none;
+                                border-radius: 8px;
+                                padding: 10px 0 0px 0;
+                                & .cardFirsttxt{
+                                    font-size: 15px;
+                                    color: $gray-600;
+                                    text-decoration: none;
+                                }
+                                & .cardSecondtxt{
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    text-decoration: none;
+                                    display: block;
+                                    color: $black;
+                                }
+                                & .reviewcontainer{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 5px;
+                                    & .starul{
+                                        list-style: none;
+                                        display: flex;
+                                        padding: 0 !important;
+                                        margin: 0 !important;
+                                        & .starli{
+                                            margin: 1px;
+                                            & img{
+                                                width: 15px;
+                                                height: 15px;
+                                            }
+                                        }
+                                    }
+                                    & span{
+                                            font-size: 12px;
+                                            font-weight: 600;
+                                            margin-top: 8px;
+                                            margin-left: 5px;
+                                    }
+                                }
+                                & .price{
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    color: $green;
+                                    & span{
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: $gray-600;
+                                        margin-left: 5px;
+                                    }
+                                }
+                                & .cartContainer{
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    overflow: hidden;
+                                    background: lighten($color: $green, $amount: 62);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    & img{
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
