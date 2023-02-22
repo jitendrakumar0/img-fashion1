@@ -13,7 +13,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $theme2;
+  background-color: $lightgreen;
+}
+.owl-stage-outer {
+  padding: 0 !important;
 }
 
 

@@ -54,11 +54,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b966e7;
+  background-color: #AECCC5;
+}
+
+.owl-stage-outer {
+  padding: 0 !important;
 }
 
 .fashionNavbar {
-  height: 80px;
+  height: 70px;
 }
 .fashionNavbar .fashionHeader .navbarLogo img {
   height: 40px;
@@ -139,14 +143,16 @@ body {
   cursor: pointer;
 }
 .fashionNavbar .fashionHeader .navEndiconscontainer .navCartcontainer img {
-  margin-right: 10px;
+  margin-right: 15px;
+  height: 16px;
   margin-top: -4px;
 }
 .fashionNavbar .fashionHeader .navEndiconscontainer .wishlistContainer:hover {
   cursor: pointer;
 }
 .fashionNavbar .fashionHeader .navEndiconscontainer .wishlistContainer img {
-  margin-right: 10px;
+  margin-right: 15px;
+  height: 16px;
 }
 .fashionNavbar .fashionHeader .navEndiconscontainer .profileContainer {
   width: 40px;
@@ -162,14 +168,22 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.fashionNavbar .fashionHeader .nvDropimgcontainer {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
 .fashionNavbar .fashionHeader .nvDropimgcontainer img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .heroFluid {
   width: 100%;
-  height: calc(100vh - 200px);
-  background-color: #FFFFFF;
+  background-color: #F0F0F0;
+  padding: 2rem 0.75rem 3rem 0.75rem;
 }
 .heroFluid:hover .owl-prev {
   display: flex !important;
@@ -178,25 +192,23 @@ body {
   display: flex !important;
 }
 .heroFluid .heroContainer .owlCarousel .owlItem .heroLefttxtcontainer .txtFirst {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
 }
 .heroFluid .heroContainer .owlCarousel .owlItem .heroLefttxtcontainer .txtSecond {
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 700;
-  color: #6f42c1;
+  line-height: normal;
 }
 .heroFluid .heroContainer .owlCarousel .owlItem .heroLefttxtcontainer .txtThird {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 700;
-  color: #198754;
-  letter-spacing: 2px;
 }
 .heroFluid .heroContainer .owlCarousel .owlItem .heroLefttxtcontainer .shopclass {
   text-decoration: none;
   color: #198754;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .heroFluid .heroContainer .owlCarousel .owlItem .heroImgcontainer {
   width: 100%;
@@ -236,16 +248,16 @@ body {
 }
 
 .minicardfluid {
-  background-color: #FFFFFF;
+  background-color: #088178;
 }
 .minicardfluid .minicardcontainner .minicarddatacontainer {
-  border: 1px solid #198754;
+  border: 1px solid #dee2e6;
   border-radius: 5px;
   height: 100%;
   width: 100%;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,6 +266,9 @@ body {
 .minicardfluid .minicardcontainner .minicarddatacontainer:hover {
   transform: translatey(-10px);
   cursor: pointer;
+}
+.minicardfluid .minicardcontainner .minicarddatacontainer .minicardimgcontainer {
+  width: 100%;
 }
 .minicardfluid .minicardcontainner .minicarddatacontainer .minicardimgcontainer img {
   width: 100%;
@@ -449,7 +464,7 @@ body {
 .bannerfluid .bannercontainer .bannerdatacontainer {
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 40px;
 }
 .bannerfluid .bannercontainer .bannerdatacontainer .bannertxt1 {
   font-size: 20px;
@@ -624,7 +639,7 @@ body {
 .offerbannerfluid .offerbannnercontainer .offerbannerdatacontainer .offertxtcontainer {
   position: absolute;
   top: 30%;
-  left: 2%;
+  left: 20px;
   width: 50%;
 }
 .offerbannerfluid .offerbannnercontainer .offerbannerdatacontainer .offertxtcontainer .offertxt1 {
@@ -978,6 +993,462 @@ body {
   height: 100%;
 }
 
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer {
+  border: 1px solid #ced4da;
+  padding: 20px;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytHeading {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 10px;
+  color: #088178;
+  position: relative;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytHeading::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #088178;
+  position: absolute;
+  top: 39px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata {
+  margin-top: 10px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .rytinnerdata {
+  font-size: 15px;
+  padding: 5px 0;
+  transition: 0.3s linear;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .rytinnerdata:hover {
+  transform: translateX(8px);
+  color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .rytinnerdata .rytdataAnchor {
+  text-decoration: none;
+  color: #000;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .txt1 {
+  font-size: 15px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .range {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .txt2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: #088178;
+  margin-bottom: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .form-check .forminp:checked {
+  background-color: #088178 !important;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .form-check .forminp:focus {
+  box-shadow: none !important;
+  border-color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .form-check .formlbl {
+  font-size: 14px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .imgContainer {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .headd {
+  font-size: 15px;
+  font-weight: 600;
+  color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .price {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .reviewcontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .reviewcontainer .starul {
+  list-style: none;
+  display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .reviewcontainer .starul .starli {
+  margin: 1px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .reviewcontainer .starul .starli img {
+  width: 15px;
+  height: 15px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .rytdata .reviewcontainer span {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .filterbtn {
+  border: none;
+  background-color: #088178;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .filterbtn img {
+  height: 14px;
+  margin-right: 8px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer img {
+  width: 100%;
+  height: 100%;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .share {
+  font-size: 20px;
+  font-weight: 500;
+  color: #495057;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .share img {
+  height: 15px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .mainHeading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .subhead {
+  font-size: 15px;
+  font-weight: 500;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .subhead span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #088178;
+  margin-left: 8px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .reviewcontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .reviewcontainer .starul {
+  list-style: none;
+  display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .reviewcontainer .starul .starli {
+  margin: 1px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .reviewcontainer .starul .starli img {
+  width: 15px;
+  height: 15px;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .reviewcontainer span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #495057;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 8px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .paisa {
+  font-size: 30px;
+  color: #088178;
+  font-weight: 600;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .paisa span:first-child {
+  font-size: 20px;
+  color: #495057;
+  padding: 0 8px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .paisa span:last-child {
+  font-size: 20px;
+  color: #495057;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 8px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .para {
+  font-size: 15px;
+  color: #6c757d;
+  text-align: justify;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .dividerr {
+  width: 100%;
+  height: 1px;
+  background-color: #e9ecef;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .boxcontainer img {
+  height: 15px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .boxcontainer span {
+  font-size: 13px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .colour {
+  font-size: 15px;
+  font-weight: 500;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .inpppppp:checked ~ .gola {
+  position: relative;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .inpppppp:checked ~ .gola::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola.golabg1 {
+  background-color: #d63384;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola.golabg2 {
+  background-color: #fd7e14;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola.golabg3 {
+  background-color: #0d6efd;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola.golabg4 {
+  background-color: #000;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola.golabg5 {
+  background-color: #0dcaf0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .size {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: 1px solid #088178;
+  color: #000;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .inpppppp:checked ~ .size {
+  background-color: #088178;
+  color: #fff;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .addcart {
+  border: none;
+  background-color: #088178;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .Navpills .Navitems .Navlink {
+  color: #000 !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .Navpills .Navitems .Navlink.active {
+  background-color: #fff !important;
+  color: #088178 !important;
+  font-size: 15px !important;
+  font-weight: 500;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .paraGraph {
+  text-align: justify;
+  font-size: 15px;
+  color: #6c757d;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .listcontainer .ulclass .liclass {
+  font-size: 14px;
+  color: #6c757d;
+  padding: 5px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .listcontainer .ulclasss {
+  list-style: none;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .listcontainer .ulclasss .liclass {
+  font-size: 14px;
+  color: #6c757d;
+  padding: 5px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 20px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .packagehead {
+  font-size: 20px;
+  font-weight: 600;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab1Data .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 20px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab2data .Tablefont {
+  font-size: 15px;
+  color: #6c757d;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .reviewmainhead {
+  font-size: 15px;
+  font-weight: 600;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .custmerimgcontainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .custmerimgcontainer img {
+  width: 100%;
+  height: 100%;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .customername {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .year {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .reviewcontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .reviewcontainer .starul {
+  list-style: none;
+  display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .reviewcontainer .starul .starli {
+  margin: 1px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .reviewcontainer .starul .starli img {
+  width: 15px;
+  height: 15px;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .reviewcontainer span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #495057;
+  margin-top: 8px;
+  margin-left: 8px;
+  line-height: normal;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .minpara {
+  font-size: 15px;
+  color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .timing {
+  font-size: 13px;
+  color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .replyanchor {
+  text-decoration: none;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .replyanchor .replyy {
+  font-size: 14px;
+  color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 20px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .star {
+  font-size: 14px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .progress {
+  border-radius: 0 !important;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .progress .progress-bar {
+  background-color: #088178 !important;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .lineee {
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 20px 0;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .txtarea {
+  padding-left: 15px;
+  border-color: #ced4da !important;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .txtarea:focus {
+  outline: 1px solid #088178 !important;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .formControl {
+  box-shadow: none !important;
+  border-color: #ced4da;
+  height: 45px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .formControl:focus {
+  outline: 1px solid #088178 !important;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .commentbtn {
+  border: none;
+  background-color: #088178;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
@@ -1065,6 +1536,10 @@ body {
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
   }
+  .blogindexFluid .blogindexContainer .img1bottomtxtcontainerr {
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
@@ -1073,8 +1548,17 @@ body {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
   }
+  .bannerfluid .bannercontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    width: 62%;
+  }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
+  }
+  .blogindexFluid .blogindexContainer .blogrytimgcontainer {
+    height: 300px;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
@@ -1083,6 +1567,22 @@ body {
 @media (max-width: 767.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
+  }
+  .bannerfluid .bannercontainer .bannerimgcontainer {
+    height: 170px;
+  }
+  .bannerfluid .bannercontainer .bannerimgcontainer img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .bannerfluid .bannercontainer .bannerdatacontainer .bannertxt1 {
+    font-size: 16px;
+  }
+  .bannerfluid .bannercontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 22px;
+  }
+  .bannerfluid .bannercontainer .bannerdatacontainer .bannerbtn {
+    font-size: 12px;
   }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;

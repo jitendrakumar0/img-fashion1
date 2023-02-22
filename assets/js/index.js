@@ -4,19 +4,27 @@ $('.homeSlider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText: ["<img class='arrowimg' src='./assets/img/icons8-chevron-left-30.png' class='img-fluid'>","<img class='arrowimg' src='./assets/img/icons8-chevron-right-30.png'>"],
+    dots: false,
     responsive:{
-        0:{
-            items:1
+        0: {
+            items: 1,
         },
-        600:{
-            items:3
+        576: {
+            items: 1,
         },
-        1000:{
-            items:1
-        }
-    }
-})
+        768: {
+            items: 1,
+        },
+        992: {
+            items: 1,
+        },
+        1200: {
+            items: 1,
+            nav: true,
+        },
+    },
+    navText: ["<img class='arrowimg' src='./assets/img/icons8-chevron-left-30.png' class='img-fluid'>","<img class='arrowimg' src='./assets/img/icons8-chevron-right-30.png'>"],
+});
 
 // Popular category slider
 $('.popular').owlCarousel({
@@ -42,16 +50,17 @@ $('.popular').owlCarousel({
             items: 3,
         },
         768: {
-          items: 5,
+            items: 4,
         },
         992: {
-          items: 6,
+            items: 5,
         },
         1200: {
-          items: 5,
-          nav: true,
-      },
+            items: 6,
+            nav: true,
+        },
     },
+    navText: ["", ""]
 });
 
 // new arrivals slider
@@ -79,17 +88,38 @@ $('.arrivals').owlCarousel({
             items: 3,
         },
         768: {
-          items: 5,
+            items: 4,
         },
         992: {
-          items: 6,
+            items: 5,
         },
         1200: {
-          items: 5,
-          nav: true,
-      },
+            items: 6,
+            nav: true,
+        },
     },
+    navText: ["", ""]
 });
+
+
+// product owl
+$('.product').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
 
 // mareq js
 gsap.utils.toArray('.stb_line_single').forEach((line, i) => {
