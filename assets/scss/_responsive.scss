@@ -2,7 +2,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   @include fashionNavbar-mixin-min-lg();
-  @include heroFluid-mixin-min-lg();
+  @include heroSection-mixin-min-lg();
   @include minicardfluid-mixin-min-lg();
   @include tabsfluid-mixin-min-lg();
   @include bannerfluid-mixin-min-lg();
@@ -14,14 +14,17 @@
   @include mareqfluid-mixin-min-lg();
   @include newsletterfluid-mixin-min-lg();
   @include footerfluid-mixin-min-lg();
+  @include productdetailfluid-mixin-min-lg();
+  @include aboutuspage-mixin-min-lg();
   // @include herosection-mixin-min-sm();
+  
   
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   @include fashionNavbar-mixin-min-lg();
-  @include heroFluid-mixin-min-lg();
+  @include heroSection-mixin-min-lg();
   @include minicardfluid-mixin-min-lg();
   @include tabsfluid-mixin-min-lg();
   @include bannerfluid-mixin-min-lg();
@@ -33,6 +36,8 @@
   @include mareqfluid-mixin-min-lg();
   @include newsletterfluid-mixin-min-lg();
   @include footerfluid-mixin-min-lg();
+  @include productdetailfluid-mixin-min-lg();
+  @include aboutuspage-mixin-min-lg();
   
   // @include navbar-mixin-min-md();
 
@@ -41,7 +46,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   @include fashionNavbar-mixin-min-lg();
-  @include heroFluid-mixin-min-lg();
+  @include heroSection-mixin-min-lg();
   @include minicardfluid-mixin-min-lg();
   @include tabsfluid-mixin-min-lg();
   @include bannerfluid-mixin-min-lg();
@@ -53,6 +58,8 @@
   @include mareqfluid-mixin-min-lg();
   @include newsletterfluid-mixin-min-lg();
   @include footerfluid-mixin-min-lg();
+  @include productdetailfluid-mixin-min-lg();
+  @include aboutuspage-mixin-min-lg();
   // @include herosection-mixin-min-lg();
  
   // @include heading-fs-12-mixin-min-lg();
@@ -61,7 +68,7 @@
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   @include fashionNavbar-mixin-min-xl();
-  @include heroFluid-mixin-min-xl();
+  @include heroSection-mixin-min-xl();
   @include minicardfluid-mixin-min-xl();
   @include tabsfluid-mixin-min-xl();
   @include bannerfluid-mixin-min-xl();
@@ -73,6 +80,8 @@
   @include mareqfluid-mixin-min-xl();
   @include newsletterfluid-mixin-min-xl();
   @include footerfluid-mixin-min-xl();
+  @include productdetailfluid-mixin-min-xl();
+  @include aboutuspage-mixin-min-xl();
   // @include herosection-mixin-min-xl();
   
 
@@ -82,7 +91,7 @@
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   @include fashionNavbar-mixin-min-xxl();
-  @include heroFluid-mixin-min-xxl();
+  @include heroSection-mixin-min-xxl();
   @include minicardfluid-mixin-min-xxl();
   @include tabsfluid-mixin-min-xxl();
   @include bannerfluid-mixin-min-xxl();
@@ -94,6 +103,8 @@
   @include mareqfluid-mixin-min-xxl();
   @include newsletterfluid-mixin-min-xxl();
   @include footerfluid-mixin-min-xxl();
+  @include productdetailfluid-mixin-min-xxl();
+  @include aboutuspage-mixin-min-xxl();
   // @include herosection-mixin-min-xxl();
  
   // @include heading-fs-12-mixin-min-xxl();
@@ -102,7 +113,7 @@
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
   @include fashionNavbar-mixin-max-xl();
-  @include heroFluid-mixin-max-xl();
+  @include heroSection-mixin-max-xl();
   @include minicardfluid-mixin-max-xl();
   @include tabsfluid-mixin-max-xl();
   @include bannerfluid-mixin-max-xl();
@@ -114,6 +125,8 @@
   @include mareqfluid-mixin-max-xl();
   @include newsletterfluid-mixin-max-xl();
   @include footerfluid-mixin-max-xl();
+  @include productdetailfluid-mixin-max-xl();
+  @include aboutuspage-mixin-max-xl();
   // @include herosection-mixin-max-xl();
 
   // @include heading-fs-12-mixin-max-xl();
@@ -122,7 +135,7 @@
 // Large devices (desktops, less than 1300px)
 @media (max-width: 1299.98px) {
   @include fashionNavbar-mixin-max-1300();
-  @include heroFluid-mixin-max-1300();
+  @include heroSection-mixin-max-1300();
   @include minicardfluid-mixin-max-1300();
   @include tabsfluid-mixin-max-1300();
   @include bannerfluid-mixin-max-1300();
@@ -134,6 +147,8 @@
   @include mareqfluid-mixin-max-1300();
   @include newsletterfluid-mixin-max-1300();
   @include footerfluid-mixin-max-1300();
+  @include productdetailfluid-mixin-max-1300();
+  @include aboutuspage-mixin-max-1300();
   // @include herosection-mixin-max-1300();
   
 
@@ -142,7 +157,7 @@
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
   @include fashionNavbar-mixin-max-lg();
-  @include heroFluid-mixin-max-lg();
+  @include heroSection-mixin-max-lg();
   @include minicardfluid-mixin-max-lg();
   @include tabsfluid-mixin-max-lg();
   @include bannerfluid-mixin-max-lg();
@@ -154,6 +169,8 @@
   @include mareqfluid-mixin-max-lg();
   @include newsletterfluid-mixin-max-lg();
   @include footerfluid-mixin-max-lg();
+  @include productdetailfluid-mixin-max-lg();
+  @include aboutuspage-mixin-max-lg();
   // @include herosection-mixin-max-lg();
  
 
@@ -163,7 +180,7 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   @include fashionNavbar-mixin-max-md();
-  @include heroFluid-mixin-max-md();
+  @include heroSection-mixin-max-md();
   @include minicardfluid-mixin-max-md();
   @include tabsfluid-mixin-max-md();
   @include bannerfluid-mixin-max-md();
@@ -175,6 +192,8 @@
   @include mareqfluid-mixin-max-md();
   @include newsletterfluid-mixin-max-md();
   @include footerfluid-mixin-max-md();
+  @include productdetailfluid-mixin-max-md();
+  @include aboutuspage-mixin-max-md();
   // @include herosection-mixin-max-md();
  
 
@@ -186,7 +205,7 @@
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
   @include fashionNavbar-mixin-max-sm();
-  @include heroFluid-mixin-max-sm();
+  @include heroSection-mixin-max-sm();
   @include minicardfluid-mixin-max-sm();
   @include tabsfluid-mixin-max-sm();
   @include bannerfluid-mixin-max-sm();
@@ -198,6 +217,8 @@
   @include mareqfluid-mixin-max-sm();
   @include newsletterfluid-mixin-max-sm();
   @include footerfluid-mixin-max-sm();
+  @include productdetailfluid-mixin-max-sm();
+  @include aboutuspage-mixin-max-sm();
   // @include herosection-mixin-max-sm();
 
 
@@ -207,7 +228,7 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   @include fashionNavbar-mixin-max-xs();
-  @include heroFluid-mixin-max-xs();
+  @include heroSection-mixin-max-xs();
   @include minicardfluid-mixin-max-xs();
   @include tabsfluid-mixin-max-xs();
   @include bannerfluid-mixin-max-xs();
@@ -219,6 +240,8 @@
   @include mareqfluid-mixin-max-xs();
   @include newsletterfluid-mixin-max-xs();
   @include footerfluid-mixin-max-xs();
+  @include productdetailfluid-mixin-max-xs();
+  @include aboutuspage-mixin-max-xs();
   // @include herosection-mixin-max-xs();
 
 

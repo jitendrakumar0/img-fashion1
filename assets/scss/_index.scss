@@ -467,9 +467,11 @@
                     }
                     & .txtarea{
                         padding-left: 15px;
+                        padding-top: 15px;
                         border-color: $gray-400 !important;
                         border-radius: 5px;
                         border: 1px solid;
+                        font-size: 15px;
                         &:focus{
                             outline: 1px solid $theme1 !important;
                             // p.ex3 {outline: 5px solid yellow;}
@@ -479,6 +481,7 @@
                         box-shadow: none !important;
                         border-color: $gray-400;
                         height: 45px;
+                        font-size: 15px;
                         &:focus{
                             outline: 1px solid $theme1 !important;
                         }
@@ -493,6 +496,4600 @@
                         color: $white;
                     }
                 }
+            }
+        }
+        & .packagehead{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        & .paddingcontainer{
+            padding: 10px;
+            border:1px solid $gray-400;
+            border-radius: 8px;
+            & .cardmainconatiner{
+                border:none ;
+                & .card-img-top{
+                    width: 100%;
+                    height: 250px !important;
+                    border-radius: 8px;
+                    &:hover{
+                        filter: brightness(1.1);
+                    }
+                }
+                & .imgtxtbg{
+                    position: absolute;
+                    top:2%;
+                    left: 2%;
+                    background: lighten($color: $pink, $amount: 35);
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    & .imgtxtbg{
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+                & .cardBody{
+                    border:none;
+                    border-radius: 8px;
+                    padding: 10px 0 0px 0;
+                    & .cardFirsttxt{
+                        font-size: 15px;
+                        color: $gray-600;
+                        text-decoration: none;
+                    }
+                    & .cardSecondtxt{
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        display: block;
+                        color: $black;
+                    }
+                    & .reviewcontainer{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        & .starul{
+                            list-style: none;
+                            display: flex;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            & .starli{
+                                margin: 1px;
+                                & img{
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+                        }
+                        & span{
+                                font-size: 12px;
+                                font-weight: 600;
+                                margin-top: 8px;
+                                margin-left: 5px;
+                        }
+                    }
+                    & .price{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $green;
+                        & span{
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $gray-600;
+                            margin-left: 5px;
+                        }
+                    }
+                    & .cartContainer{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background: lighten($color: $green, $amount: 62);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img{
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        & .bannerimgcontainer{
+            & img{
+                width: 100%;
+            }
+        }
+        & .bannerdatacontainer{
+            position: absolute;
+            top: 30%;
+            left:40px;
+            & .bannertxt1{
+                font-size: 20px;
+                font-weight: 600;
+                color: $green;
+            }
+            & .bannertxt2{
+                font-size: 30px;
+                font-weight: 600;
+            }
+            & .bannerbtn{
+                background-color: $lightgreen;
+                display: inline-block;
+                color: $white;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 8px 16px;
+                border-radius: 5px;
+                margin-top: 8px;
+                border:none;
+            }
+        }
+    }
+}
+
+@mixin productdetailfluid-mixin-min-sm(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-md(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-lg(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-xl(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-min-xxl(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-xl(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-1300(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                  
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-lg(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                        height: 600px;
+                    & img{
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                    font-size: 25px;
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-md(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+              
+                & .bannertxt1{
+                  
+                }
+                & .bannertxt2{
+                    font-size: 18px;
+                }
+                & .bannerbtn{
+                    padding: 7px 14px;
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-sm(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                   
+                }
+            }
+            & .bannerdatacontainer{
+                   top:38% ;
+                & .bannertxt1{
+                    font-size: 18px;
+                }
+                & .bannertxt2{
+                    font-size: 13px;
+                }
+                & .bannerbtn{
+                    padding: 4px 8px;
+                }
+            }
+        }
+    }
+}
+@mixin productdetailfluid-mixin-max-xs(){
+    .productdetailfluid{
+        & .productdetailcontainer{
+            & .productdetailpagerytpartcontainer{
+               
+                & .rytHeading{
+                   
+                    &::before{
+                        
+                    }
+                }
+                & .rytdata{
+                    
+                    & .rytinnerdata{
+                        
+                        &:hover{
+                           
+                        }
+                        & .rytdataAnchor{
+                           
+                        }
+                    }
+                    & .txt1{
+                        
+                    }
+                    & .range{
+                        
+                    }
+                    & .txt2{
+                        
+                    }
+                    & .form-check{
+                        & .forminp{
+                            &:checked{
+                                
+                            }
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formlbl{
+                            
+                        }   
+                    }
+                    & .imgContainer{
+                       
+                        & img{
+                            
+                        }
+                    }
+                    & .headd{
+                  
+                    }
+                    & .price{
+                       
+                    }
+                    & .reviewcontainer{
+                        
+                        & .starul{
+                            
+                            & .starli{
+                               
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                               
+                        }
+                    }
+                }
+                & .filterbtn{
+                   
+                    & img{
+                       
+                    }
+                }
+            }
+            & .productdetailLeftpartcontainer{
+                & .leftImgcontainer{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .share{
+                    
+                    & img{
+                       
+                    }
+                }
+                & .leftpartcol7datacontainer{
+                    & .mainHeading{
+                        
+                    }
+                    & .subhead{
+                       
+                        & span{
+                           
+                        }
+                    }
+                    & .reviewcontainer{
+                       
+                        & .starul{
+                           
+                            & .starli{
+                              
+                                & img{
+                                    
+                                }
+                            }
+                        }
+                        & span{
+                                
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    & .paisa{
+                        
+                        & span{
+                            &:first-child{
+                                
+                            }
+                            &:last-child{
+                               
+                            }
+                        }
+                    }
+                    & .divider{
+                       
+                    }
+                    .para{
+                       
+                    }
+                    & .dividerr{
+                        
+                    }
+                    & .boxcontainer{
+                        & img{
+                         
+                        }
+                        & span{
+                           
+                        }
+                    }
+                    & .colour{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .gola{
+                               
+                                &::after{
+                                  
+                                }
+                            }
+                        }
+                    }
+                    & .gola{
+                        cursor: pointer;
+                       
+                        &.golabg1{
+                            
+                        }
+                        &.golabg2{
+                           
+                        }
+                        &.golabg3{
+                            
+                        }
+                        &.golabg4{
+                            
+                        }
+                        &.golabg5{
+                         
+                        }
+                    }
+                    & .size{
+                        
+                    }
+                    & .inpppppp{
+                        &:checked{
+                            &~ .size{
+                               
+                            }
+                        }
+                    }
+                    & .addcart{
+                      
+                    }
+                }
+                & .Navpills{
+                    & .Navitems{
+                        & .Navlink{
+                           
+                            &.active{
+                                
+                            }
+                        }
+                    }
+                }
+                & .tabContentss{
+                    & .tab1Data{
+                        & .paraGraph{
+                           
+                        }
+                        & .listcontainer{
+                            & .ulclass{
+                                & .liclass{
+                                  
+                                }
+                            }
+                            & .ulclasss{
+                               
+                                & .liclass{
+                                  
+                                }
+                            }
+                        }
+                        & .line{
+                           
+                        }
+                        & .packagehead{
+                         
+                        }
+                        & .line{
+                           
+                        }
+                    }
+                    & .tab2data{
+                        & .Tablefont{
+                           
+                        }
+                    }
+                    & .tab3data{
+                        & .reviewmainhead{
+                          
+                        }
+                        & .custmerimgcontainer{
+                           
+                            & img{
+                                
+                            }
+                        }
+                        & .customername{
+                           
+                        }
+                        & .year{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                   
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .minpara{
+                            
+                        }
+                        & .timing{
+                           
+                        }
+                        & .replyanchor{
+                            
+                            & .replyy{
+                               
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .divider{
+                           
+                        }
+                        & .star{
+                            
+                        }
+                        & .progress{
+                            
+                            & .progress-bar{
+                               
+                            }
+                        }
+                        & .lineee{
+                            
+                        }
+                        & .txtarea{
+                           
+                            &:focus{
+                               
+                            }
+                        }
+                        & .formControl{
+                           
+                            &:focus{
+                             
+                            }
+                        }
+                        & .commentbtn{
+                           
+                        }
+                    }
+                }
+            }
+            & .packagehead{
+                
+            }
+            & .paddingcontainer{
+               
+                & .cardmainconatiner{
+                 
+                    & .card-img-top{
+                        
+                        &:hover{
+                           
+                        }
+                    }
+                    & .imgtxtbg{
+                       
+                        & .imgtxtbg{
+                           
+                        }
+                    }
+                    & .cardBody{
+                        
+                        & .cardFirsttxt{
+                           
+                        }
+                        & .cardSecondtxt{
+                           
+                        }
+                        & .reviewcontainer{
+                           
+                            & .starul{
+                                
+                                & .starli{
+                                  
+                                    & img{
+                                       
+                                    }
+                                }
+                            }
+                            & span{
+                                   
+                            }
+                        }
+                        & .price{
+                          
+                            & span{
+                               
+                            }
+                        }
+                        & .cartContainer{
+                            
+                            & img{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            & .bannerimgcontainer{
+                & img{
+                    height: 120px;
+                }
+            }
+            & .bannerdatacontainer{
+                    top:38%;
+                    left: 6%;
+                & .bannertxt1{
+                    font-size: 14px;
+                }
+                & .bannertxt2{
+                    font-size: 10px;
+                    width: 77%;
+                }
+                & .bannerbtn{
+                   
+                }
+            }
+        }
+    }
+}
+
+// product page
+.mainHeadingg{
+    font-size: 20px ;
+    font-weight: 500;
+    color: $theme1;
+}
+.form-select{
+    border-color: $gray-400;
+    font-size: 15px;
+    color: $gray-600;
+    &:focus{
+        box-shadow: none !important;
+        border-color:$theme1 !important;
+    }
+}
+
+
+// wishlist table
+.tablefluid{
+    & .tablecontainer{
+        & .table{
+            & th {
+                &:first-child {
+                    min-width: 80px;
+                }
+                &:nth-child(2) {
+                    min-width: 400px;
+                }
+                &:nth-child(3) {
+                    min-width: 80px;
+                }
+                &:nth-child(4) {
+                    min-width: 150px;
+                }
+                &:nth-child(5) {
+                    min-width: 200px;
+                }
+                &:nth-child(6) {
+                    min-width: 80px;
+                }
+            }
+            & .tableimgcontainer{
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                border-radius: 5px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .detailscontainer{
+                & .d1{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $theme1;
+                }
+                & .d2{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $gray-600;
+                }
+                & .d3{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: $gray-600;
+                }
+            }
+            & .pricecontainer{
+                & span{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $gray-600;
+                    margin-left: 5px;
+                }
+            }
+            & .stockcontainer{
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+            }
+            & .stockcontainerr{
+                font-size: 15px;
+                font-weight: 500;
+                color: $red;
+            }
+            & .cartbg{
+                // background: lighten($color: $lightgreen, $amount:20);
+                background-color: $theme1;
+                border-radius: 5px;
+                padding: 8px 16px;
+                margin: 0 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+                & img{
+                    height: 14px;
+                    margin-right: 8px;
+                    filter: brightness(1);
+                }
+                & span{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $white;
+                    line-height: 2.0;
+                }
+            }
+            & .cartbgg{
+                background-color: $black;
+                border-radius: 5px;
+                padding: 8px 16px;
+                margin: 0 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+                & span{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $white;
+                    line-height: 2.0;
+                }
+            }
+            & .del{
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            & .thclass{
+                font-size: 15px;
+                font-weight: 600;
+                color: $gray-600;
             }
         }
     }

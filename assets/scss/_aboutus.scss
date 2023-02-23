@@ -1,0 +1,1849 @@
+.contactusfluid{
+    & .contactuscontainer{
+        & .leftpartdatacontainer{
+            & .leftmainhead{
+                font-size: 15px;
+                font-weight: 600;
+                color: $theme1;
+            }
+            & .subheading{
+                font-size: 40px;
+                font-weight: 700;
+                color: $black;
+                line-height: normal;
+                margin: 10px 0;
+            }
+            & .para{
+                font-size: 15px;
+                font-weight: 500;
+                color: $gray-600;
+                color: $black;
+                margin: 20px 0;
+                text-align: justify;
+            }
+        }
+        & .rytpartdatacontainer{
+            & .rytimgcontainer{
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+.ourteamfluid{
+    & .ourteamcontainer{
+        & .leftmainhead{
+            font-size: 15px;
+            font-weight: 600;
+            color: $theme1;
+        }
+        & .teamsubhead{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        & .para{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .btncontainer{
+            & .memberbtn{
+                border: 2px solid $theme1;
+                background-color: $white;
+                padding: 8px 16px;
+                color: $theme1;
+                font-weight: 500;
+                border-radius: 5px;
+                &:hover{
+                background-color: $theme1;
+                color: $white;
+                }
+            } 
+        }
+        & .teamdatacontainer{
+            & .imgparentt{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    transition: 0.3s linear;
+                &:hover{
+                    transform: translateY(-10px);
+                }
+                }
+            }
+            & .txt{
+                text-align: center;
+                margin-top: 20px;
+                & .teamname{
+                font-size: 20px;
+                font-weight: 600;
+                }
+                & .teamdesignation{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $theme1;
+                }
+                & .socialcontainer{
+                    & img{
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+        & .worlddatacontainer{
+            text-align: center;
+            & .leftmainhead{
+
+            }
+            & .teamsubhead{
+                line-height: normal;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+            & .para{
+                font-size: 15px;
+            }
+        }
+        & .worldcontainer{
+            & .worlsimgcontainer{
+                width: 100%;
+                height: 100%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+                transition: 0.3s linear;
+                    &:hover{
+                        transform: translatey(-5px);
+                        border:1px solid;
+                        border-color: $theme1;
+                        border-radius: 5px;
+                    }
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    
+                }
+            }
+            & .dataaa{
+                text-align: center;
+                margin-top: 20px;
+                & .txtt1{
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                & .txtt2{
+                    font-size: 15px;
+                    color: $gray-600;
+                }
+                & .txtt3{
+                    font-size: 15px;
+                    color: $gray-600;
+                }
+            }
+        }
+        & .col4bgg{
+            // background-color: $gray-100;
+            background-color: $white;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            transition: 0.3s linear;
+            &:hover{
+                transform: translatey(-5px);
+                border:1px solid;
+                border-color: $theme1;
+                border-radius: 5px;
+            }
+            & .imageP{
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+                transition: 0.3s linear;
+                &:hover{
+                    transform: translatey(-5px);
+                    border:1px solid;
+                    border-color: $theme1;
+                    border-radius: 5px;
+                }
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    object-position: top;
+                }
+            }
+            & .colData{
+                & .Name{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                & .nik{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: $gray-600;
+                }
+                & .ParA{
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-align: justify;
+                    &.multiline-ellipsis {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 5; /* start showing ellipsis when 3rd line is reached */
+                        white-space: pre-wrap; /* let the text wrap preserving spaces */
+                    }
+                }
+            }
+        }
+        & .viewbtn{
+            border:none;
+            background-color: $theme1;
+            color: $white;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: 0.3s linear;
+            &:hover{
+                transform: translatey(-5px);
+                border:1px solid;
+                border-color: $theme1;
+                border-radius: 5px;
+            }
+        }
+        & .HeAD{
+            font-size: 15px;
+            font-weight: 600;
+            color: #088178;
+            text-align: center;
+
+        }
+    }
+}
+
+
+
+
+@mixin aboutuspage-mixin-min-sm(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-min-md(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-min-lg(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-min-xl(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-min-xxl(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-max-xl(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-max-1300(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-max-lg(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                    height: 390px;
+                    & img{
+                        object-fit: cover;
+                        object-position: left;
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-max-md(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    font-size: 30px;
+                }
+                & .para{
+                    font-size: 14px;
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-max-sm(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                    margin-top: 20px;
+                }
+                & .subheading{
+                    font-size: 25px;
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        object-fit: cover;
+                        object-position: left;
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+                font-size: 25px;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+            & .para{
+
+            }
+            & .btncontainer{
+                & .memberbtn{
+                    padding: 4px 8px;
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                    height: 300px;
+                    & img{
+                        object-fit: cover;
+                        object-position: top;
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                    margin-bottom: 10px;
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+@mixin aboutuspage-mixin-max-xs(){
+    .contactusfluid{
+        & .contactuscontainer{
+            & .leftpartdatacontainer{
+                & .leftmainhead{
+                   
+                }
+                & .subheading{
+                    
+                }
+                & .para{
+                   
+                }
+            }
+            & .rytpartdatacontainer{
+                & .rytimgcontainer{
+                   
+                    & img{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .ourteamfluid{
+        & .ourteamcontainer{
+            & .leftmainhead{
+               
+            }
+            & .teamsubhead{
+               
+            }
+            & .para{
+               
+            }
+            & .btncontainer{
+                & .memberbtn{
+                   
+                    &:hover{
+                  
+                    }
+                } 
+            }
+            & .teamdatacontainer{
+                & .imgparentt{
+                  
+                    & img{
+                        
+                    &:hover{
+                       
+                    }
+                    }
+                }
+                & .txt{
+                   
+                    & .teamname{
+                    
+                    }
+                    & .teamdesignation{
+                      
+                    }
+                    & .socialcontainer{
+                        & img{
+                          
+                        }
+                    }
+                }
+            }
+            & .worlddatacontainer{
+               
+                & .leftmainhead{
+    
+                }
+                & .teamsubhead{
+                   
+                }
+                & .para{
+                  
+                }
+            }
+            & .worldcontainer{
+                & .worlsimgcontainer{
+                    
+                        &:hover{
+                            
+                        }
+                    & img{
+                       
+                        
+                    }
+                }
+                & .dataaa{
+                    
+                    & .txtt1{
+                       
+                    }
+                    & .txtt2{
+                       
+                    }
+                    & .txtt3{
+                       
+                    }
+                }
+            }
+            & .col4bgg{
+               
+                &:hover{
+                    
+                }
+                & .imageP{
+                   
+                    &:hover{
+                        
+                    }
+                    & img{
+                       
+                    }
+                }
+                & .colData{
+                    & .Name{
+                        
+                    }
+                    & .nik{
+                        
+                    }
+                    & .ParA{
+                       
+                        & .multiline-ellipsis {
+                           
+                        }
+                    }
+                }
+            }
+            & .viewbtn{
+                
+                &:hover{
+                    
+                }
+            }
+            & .HeAD{
+                
+    
+            }
+        }
+    }
+}
+

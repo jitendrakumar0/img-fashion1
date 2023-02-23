@@ -960,7 +960,7 @@
         & .fashionHeader{
             & .navbarLogo{
                 & img{
-                    
+                    height: 35px;
                 }
             }
             & .navDiv{
@@ -1042,7 +1042,6 @@
         & .fashionHeader{
             & .navbarLogo{
                 & img{
-                    
                 }
             }
             & .navDiv{
@@ -1844,7 +1843,6 @@
 
 
 .minicardfluid{
-    background-color: $theme1;
     & .minicardcontainner{
         & .minicarddatacontainer{
             border: 1px solid $gray-300;

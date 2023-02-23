@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fashion Index</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- owl css -->
     <link rel="stylesheet" href="assets/libs/owl/owl.carousel.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper.min.css">
     
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
@@ -113,6 +115,9 @@
                         </div>
                         <div class="col-auto col-lg-3">
                             <div class="navEndiconscontainer d-flex align-items-center">
+                                <a href="javascript:;" class="wishlistContainer d-lg-none d-md-block">
+                                    <img src="assets/img/menuIcon.svg" alt="" srcset="">
+                                </a>
                                 <a href="javascript:;" class="navCartcontainer">
                                     <img src="assets/img/Bag.svg" alt="" srcset="">
                                 </a>
@@ -132,7 +137,7 @@
             </div>
         </nav>
         <div class="bodyScrollPart flex-fill h-100 overflow-y-auto">
-            <div class="container-fluid heroFluid">
+            <!-- <div class="container-fluid heroFluid">
                 <div class="container heroContainer h-100">
                     <div class="row justify-content-center align-items-center h-100">
                         <div class="col-12">
@@ -195,10 +200,65 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="container-fluid px-0 heroSection">
+                <div class="swiper heroSwiper h-100">
+                    <div class="swiper-wrapper heroSlideBox h-100">
+                        <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/f2.jpg);">
+                            <div class="container h-100">
+                                <div class="row mx-0 align-items-center h-100 justify-content-end">
+                                    <div class="col-7 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-12 Offer text-dark">New Arrival</div>
+                                            <div class="col-12 mainHead text-dark">The New Fashion Sensation</div>
+                                            <div class="col-12 subHead text-dark">New collection of classy fashion is out now</div>
+                                            <div class="col-12 mt-1 mt-lg-3">
+                                                <a href="product-category.html" class="btn btn-outline-dark rounded-0 shadow-none shopBtn">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/heroBg1.jpg);">
+                            <div class="container h-100">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col-7 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-12 Offer">Winter Fashion Trends</div>
+                                            <div class="col-12 mainHead">Premium Collection</div>
+                                            <div class="col-12 subHead">Get upto 30% off on jackets.</div>
+                                            <div class="col-12 mt-1 mt-lg-3">
+                                                <a href="product-category.html" class="btn btn-outline-dark rounded-0 shadow-none shopBtn">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/heroBg4.jpg);">
+                            <div class="container h-100">
+                                <div class="row mx-0 align-items-center h-100 justify-content-end">
+                                    <div class="col-7 col-sm-6">
+                                        <div class="row">
+                                            <div class="col-12 Offer">New Collection</div>
+                                            <div class="col-12 mainHead">Love It Feel It</div>
+                                            <div class="col-12 subHead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, quibusdam.</div>
+                                            <div class="col-12 mt-1 mt-lg-3">
+                                                <a href="product-category.html" class="btn btn-outline-dark rounded-0 shadow-none shopBtn">Shop Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="container-fluid minicardfluid">
                 <div class="container minicardcontainner">
-                    <div class="row pt-2 gy-4">
+                    <div class="row pt-5 gy-4">
                         <div class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6">
                             <div class="minicarddatacontainer">
                                 <div class="minicardimgcontainer">
@@ -1790,6 +1850,7 @@
     <script src="assets/js/gsap.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/owl/owl.carousel.min.js"></script>
+    <script src="assets/libs/swiper/swiper.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script>
     </script>

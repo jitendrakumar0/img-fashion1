@@ -1,5 +1,8 @@
 
+
+
 // Home page hero slider
+
 $('.homeSlider').owlCarousel({
     loop:true,
     margin:10,
@@ -31,7 +34,7 @@ $('.popular').owlCarousel({
     loop: true,
     items: 10,
     margin: 20,
-    nav: false,
+    nav: true,
     dots: false,
     center: false,
     freeDrag: false,
@@ -106,10 +109,10 @@ $('.arrivals').owlCarousel({
 $('.product').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    nav:false,
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
             items:3
@@ -207,3 +210,15 @@ if (config.reversed) {
 }
     return tl;
 }
+
+
+var swiper = new Swiper(".heroSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });

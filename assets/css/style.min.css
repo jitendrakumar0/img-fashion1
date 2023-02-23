@@ -61,6 +61,41 @@ body {
   padding: 0 !important;
 }
 
+.heroSection .heroSlideBox .heroSlide {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.heroSection .heroSlideBox .heroSlide .heroproShoes {
+  transform: rotate(-30deg);
+}
+.heroSection .heroSlideBox .heroSlide .Offer {
+  font-size: 20px;
+}
+.heroSection .heroSlideBox .heroSlide .mainHead {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: normal;
+}
+.heroSection .heroSlideBox .heroSlide .subHead {
+  font-size: 20px;
+}
+.heroSection .heroSlideBox .heroSlide .shopBtn {
+  font-size: 14px;
+  padding: 9px 20px;
+  letter-spacing: 0.3px;
+}
+.heroSection .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none !important;
+}
+.heroSection .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+  border-radius: 20px !important;
+}
+.heroSection .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 40px !important;
+}
+
 .fashionNavbar {
   height: 70px;
 }
@@ -247,9 +282,6 @@ body {
   height: 15px;
 }
 
-.minicardfluid {
-  background-color: #088178;
-}
 .minicardfluid .minicardcontainner .minicarddatacontainer {
   border: 1px solid #dee2e6;
   border-radius: 5px;
@@ -1424,9 +1456,11 @@ body {
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .txtarea {
   padding-left: 15px;
+  padding-top: 15px;
   border-color: #ced4da !important;
   border-radius: 5px;
   border: 1px solid;
+  font-size: 15px;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .txtarea:focus {
   outline: 1px solid #088178 !important;
@@ -1435,6 +1469,7 @@ body {
   box-shadow: none !important;
   border-color: #ced4da;
   height: 45px;
+  font-size: 15px;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .formControl:focus {
   outline: 1px solid #088178 !important;
@@ -1448,6 +1483,462 @@ body {
   border-radius: 5px;
   color: #fff;
 }
+.productdetailfluid .productdetailcontainer .packagehead {
+  font-size: 20px;
+  font-weight: 600;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner {
+  border: none;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .card-img-top {
+  width: 100%;
+  height: 250px !important;
+  border-radius: 8px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .card-img-top:hover {
+  filter: brightness(1.1);
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .imgtxtbg {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background: #f4c8de;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .imgtxtbg .imgtxtbg {
+  font-size: 12px;
+  font-weight: 500;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0 0px 0;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .cardFirsttxt {
+  font-size: 15px;
+  color: #6c757d;
+  text-decoration: none;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .cardSecondtxt {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .reviewcontainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .reviewcontainer .starul {
+  list-style: none;
+  display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .reviewcontainer .starul .starli {
+  margin: 1px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .reviewcontainer .starul .starli img {
+  width: 15px;
+  height: 15px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .reviewcontainer span {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #198754;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .price span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  margin-left: 5px;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .cartContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e2faef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .cardBody .cartContainer img {
+  height: 15px;
+}
+.productdetailfluid .productdetailcontainer .bannerimgcontainer img {
+  width: 100%;
+}
+.productdetailfluid .productdetailcontainer .bannerdatacontainer {
+  position: absolute;
+  top: 30%;
+  left: 40px;
+}
+.productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #198754;
+}
+.productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.productdetailfluid .productdetailcontainer .bannerdatacontainer .bannerbtn {
+  background-color: #AECCC5;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 8px;
+  border: none;
+}
+
+.mainHeadingg {
+  font-size: 20px;
+  font-weight: 500;
+  color: #088178;
+}
+
+.form-select {
+  border-color: #ced4da;
+  font-size: 15px;
+  color: #6c757d;
+}
+.form-select:focus {
+  box-shadow: none !important;
+  border-color: #088178 !important;
+}
+
+.tablefluid .tablecontainer .table th:first-child {
+  min-width: 80px;
+}
+.tablefluid .tablecontainer .table th:nth-child(2) {
+  min-width: 400px;
+}
+.tablefluid .tablecontainer .table th:nth-child(3) {
+  min-width: 80px;
+}
+.tablefluid .tablecontainer .table th:nth-child(4) {
+  min-width: 150px;
+}
+.tablefluid .tablecontainer .table th:nth-child(5) {
+  min-width: 200px;
+}
+.tablefluid .tablecontainer .table th:nth-child(6) {
+  min-width: 80px;
+}
+.tablefluid .tablecontainer .table .tableimgcontainer {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.tablefluid .tablecontainer .table .tableimgcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tablefluid .tablecontainer .table .detailscontainer .d1 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #088178;
+}
+.tablefluid .tablecontainer .table .detailscontainer .d2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.tablefluid .tablecontainer .table .detailscontainer .d3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.tablefluid .tablecontainer .table .pricecontainer span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+  margin-left: 5px;
+}
+.tablefluid .tablecontainer .table .stockcontainer {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.tablefluid .tablecontainer .table .stockcontainerr {
+  font-size: 15px;
+  font-weight: 500;
+  color: #dc3545;
+}
+.tablefluid .tablecontainer .table .cartbg {
+  background-color: #088178;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0 5px;
+}
+.tablefluid .tablecontainer .table .cartbg:hover {
+  cursor: pointer;
+}
+.tablefluid .tablecontainer .table .cartbg img {
+  height: 14px;
+  margin-right: 8px;
+  filter: brightness(1);
+}
+.tablefluid .tablecontainer .table .cartbg span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 2;
+}
+.tablefluid .tablecontainer .table .cartbgg {
+  background-color: #000;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0 5px;
+}
+.tablefluid .tablecontainer .table .cartbgg:hover {
+  cursor: pointer;
+}
+.tablefluid .tablecontainer .table .cartbgg span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 2;
+}
+.tablefluid .tablecontainer .table .del {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.tablefluid .tablecontainer .table .del:hover {
+  cursor: pointer;
+}
+.tablefluid .tablecontainer .table .thclass {
+  font-size: 15px;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.contactusfluid .contactuscontainer .leftpartdatacontainer .leftmainhead {
+  font-size: 15px;
+  font-weight: 600;
+  color: #088178;
+}
+.contactusfluid .contactuscontainer .leftpartdatacontainer .subheading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  line-height: normal;
+  margin: 10px 0;
+}
+.contactusfluid .contactuscontainer .leftpartdatacontainer .para {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+  color: #000;
+  margin: 20px 0;
+  text-align: justify;
+}
+.contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.ourteamfluid .ourteamcontainer .leftmainhead {
+  font-size: 15px;
+  font-weight: 600;
+  color: #088178;
+}
+.ourteamfluid .ourteamcontainer .teamsubhead {
+  font-size: 30px;
+  font-weight: 500;
+}
+.ourteamfluid .ourteamcontainer .para {
+  font-size: 15px;
+  font-weight: 500;
+}
+.ourteamfluid .ourteamcontainer .btncontainer .memberbtn {
+  border: 2px solid #088178;
+  background-color: #fff;
+  padding: 8px 16px;
+  color: #088178;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.ourteamfluid .ourteamcontainer .btncontainer .memberbtn:hover {
+  background-color: #088178;
+  color: #fff;
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .imgparentt {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .imgparentt img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .imgparentt img:hover {
+  transform: translateY(-10px);
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .txt {
+  text-align: center;
+  margin-top: 20px;
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .txt .teamname {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .txt .teamdesignation {
+  font-size: 15px;
+  font-weight: 500;
+  color: #088178;
+}
+.ourteamfluid .ourteamcontainer .teamdatacontainer .txt .socialcontainer img {
+  padding: 5px;
+}
+.ourteamfluid .ourteamcontainer .worlddatacontainer {
+  text-align: center;
+}
+.ourteamfluid .ourteamcontainer .worlddatacontainer .teamsubhead {
+  line-height: normal;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.ourteamfluid .ourteamcontainer .worlddatacontainer .para {
+  font-size: 15px;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .worlsimgcontainer {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: 0.3s linear;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .worlsimgcontainer:hover {
+  transform: translatey(-5px);
+  border: 1px solid;
+  border-color: #088178;
+  border-radius: 5px;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .worlsimgcontainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .dataaa {
+  text-align: center;
+  margin-top: 20px;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .dataaa .txtt1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .dataaa .txtt2 {
+  font-size: 15px;
+  color: #6c757d;
+}
+.ourteamfluid .ourteamcontainer .worldcontainer .dataaa .txtt3 {
+  font-size: 15px;
+  color: #6c757d;
+}
+.ourteamfluid .ourteamcontainer .col4bgg {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: 0.3s linear;
+}
+.ourteamfluid .ourteamcontainer .col4bgg:hover {
+  transform: translatey(-5px);
+  border: 1px solid;
+  border-color: #088178;
+  border-radius: 5px;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .imageP {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: 0.3s linear;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .imageP:hover {
+  transform: translatey(-5px);
+  border: 1px solid;
+  border-color: #088178;
+  border-radius: 5px;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .imageP img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: top;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .colData .Name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .colData .nik {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c757d;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .colData .ParA {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+}
+.ourteamfluid .ourteamcontainer .col4bgg .colData .ParA.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+.ourteamfluid .ourteamcontainer .viewbtn {
+  border: none;
+  background-color: #088178;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+.ourteamfluid .ourteamcontainer .viewbtn:hover {
+  transform: translatey(-5px);
+  border: 1px solid;
+  border-color: #088178;
+  border-radius: 5px;
+}
+.ourteamfluid .ourteamcontainer .HeAD {
+  font-size: 15px;
+  font-weight: 600;
+  color: #088178;
+  text-align: center;
+}
 
 @media (min-width: 576px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
@@ -1458,6 +1949,9 @@ body {
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
   }
 }
 @media (min-width: 768px) {
@@ -1470,6 +1964,9 @@ body {
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
 }
 @media (min-width: 992px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
@@ -1481,6 +1978,9 @@ body {
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
 }
 @media (min-width: 1200px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
@@ -1489,49 +1989,97 @@ body {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
   }
+  .heroSection {
+    height: calc(100vh - 70px);
+  }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
   }
 }
 @media (min-width: 1400px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
   }
+  .heroSection {
+    height: calc(100vh - 70px);
+  }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
   }
 }
 @media (max-width: 1399.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
   }
+  .heroSection .heroSlideBox .heroSlide .mainHead {
+    font-size: 63px;
+  }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
   }
 }
 @media (max-width: 1299.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
   }
+  .heroSection .heroSlideBox .heroSlide .Offer {
+    font-size: 19px;
+  }
+  .heroSection .heroSlideBox .heroSlide .mainHead {
+    font-size: 60px;
+  }
+  .heroSection .heroSlideBox .heroSlide .subHead {
+    font-size: 19px;
+  }
+  .heroSection .heroSlideBox .heroSlide .shopBtn {
+    font-size: 15px;
+  }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
 }
 @media (max-width: 1199.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
+  }
+  .heroSection {
+    height: 480px !important;
+  }
+  .heroSection .heroSlideBox .heroSlide .Offer {
+    font-size: 18px;
+  }
+  .heroSection .heroSlideBox .heroSlide .mainHead {
+    font-size: 54px;
+  }
+  .heroSection .heroSlideBox .heroSlide .subHead {
+    font-size: 18px;
+  }
+  .heroSection .heroSlideBox .heroSlide .shopBtn {
+    font-size: 14px;
   }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
@@ -1543,10 +2091,49 @@ body {
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer {
+    height: 600px;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer img {
+    object-fit: cover;
+    object-position: top;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 25px;
+  }
+  .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer {
+    height: 390px;
+  }
+  .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
+    object-fit: cover;
+    object-position: left;
+  }
 }
 @media (max-width: 991.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
+  }
+  .heroSection {
+    height: 280px !important;
+  }
+  .heroSection .heroSlideBox .heroSlide {
+    background-size: cover;
+  }
+  .heroSection .heroSlideBox .heroSlide .Offer {
+    font-size: 16px;
+  }
+  .heroSection .heroSlideBox .heroSlide .mainHead {
+    font-size: 32px;
+  }
+  .heroSection .heroSlideBox .heroSlide .subHead {
+    font-size: 16px;
+  }
+  .heroSection .heroSlideBox .heroSlide .shopBtn {
+    font-size: 13px;
+    padding: 7px 14px;
   }
   .bannerfluid .bannercontainer .bannerdatacontainer .bannertxt2 {
     font-size: 24px;
@@ -1563,10 +2150,44 @@ body {
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 18px;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannerbtn {
+    padding: 7px 14px;
+  }
+  .contactusfluid .contactuscontainer .leftpartdatacontainer .subheading {
+    font-size: 30px;
+  }
+  .contactusfluid .contactuscontainer .leftpartdatacontainer .para {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767.98px) {
+  .fashionNavbar .fashionHeader .navbarLogo img {
+    height: 35px;
+  }
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
+  }
+  .heroSection {
+    height: 270px !important;
+  }
+  .heroSection .heroSlideBox .heroSlide .Offer {
+    font-size: 15px;
+  }
+  .heroSection .heroSlideBox .heroSlide .mainHead {
+    font-size: 26px;
+  }
+  .heroSection .heroSlideBox .heroSlide .subHead {
+    font-size: 15px;
+  }
+  .heroSection .heroSlideBox .heroSlide .shopBtn {
+    font-size: 13px;
+    padding: 7px 14px;
   }
   .bannerfluid .bannercontainer .bannerimgcontainer {
     height: 170px;
@@ -1590,15 +2211,102 @@ body {
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer {
+    top: 38%;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt1 {
+    font-size: 18px;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 13px;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannerbtn {
+    padding: 4px 8px;
+  }
+  .contactusfluid .contactuscontainer .leftpartdatacontainer .leftmainhead {
+    margin-top: 20px;
+  }
+  .contactusfluid .contactuscontainer .leftpartdatacontainer .subheading {
+    font-size: 25px;
+  }
+  .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
+    object-fit: cover;
+    object-position: left;
+  }
+  .ourteamfluid .ourteamcontainer .teamsubhead {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .ourteamfluid .ourteamcontainer .btncontainer .memberbtn {
+    padding: 4px 8px;
+  }
+  .ourteamfluid .ourteamcontainer .teamdatacontainer .imgparentt {
+    height: 300px;
+  }
+  .ourteamfluid .ourteamcontainer .teamdatacontainer .imgparentt img {
+    object-fit: cover;
+    object-position: top;
+  }
+  .ourteamfluid .ourteamcontainer .teamdatacontainer .txt {
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 575.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
     font-weight: 500;
+  }
+  .heroSection {
+    height: 200px !important;
+  }
+  .heroSection .heroSlideBox .heroSlide {
+    background-size: 100% 100%;
+  }
+  .heroSection .heroSlideBox .heroSlide .heroProImg {
+    width: auto !important;
+    max-height: 100% !important;
+    max-width: 100%;
+  }
+  .heroSection .heroSlideBox .heroSlide .Offer {
+    font-size: 12px;
+  }
+  .heroSection .heroSlideBox .heroSlide .mainHead {
+    font-size: 18px;
+    margin: 3px 0;
+  }
+  .heroSection .heroSlideBox .heroSlide .subHead {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .heroSection .heroSlideBox .heroSlide .shopBtn {
+    font-size: 10px;
+    padding: 5px 10px;
   }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
+    cursor: pointer;
+  }
+  .productdetailfluid .productdetailcontainer .bannerimgcontainer img {
+    height: 120px;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer {
+    top: 38%;
+    left: 6%;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt1 {
+    font-size: 14px;
+  }
+  .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 10px;
+    width: 77%;
   }
 }/*# sourceMappingURL=style.min.css.map */
