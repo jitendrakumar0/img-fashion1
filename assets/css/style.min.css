@@ -135,7 +135,7 @@ body {
 }
 .fashionNavbar .fashionHeader .navDiv .navUl .navLi .homeListdropdownlist {
   position: absolute;
-  top: 90%;
+  top: 87%;
   display: none;
 }
 .fashionNavbar .fashionHeader .navDiv .navUl .navLi .homeListdropdownlist .homeOnelist .lianchor {
@@ -154,7 +154,7 @@ body {
 .fashionNavbar .fashionHeader .navDiv .navUl .navLi .aboutListdropdownlist {
   display: none;
   position: absolute;
-  top: 90%;
+  top: 87%;
 }
 .fashionNavbar .fashionHeader .navDiv .navUl .navLi .aboutListdropdownlist .aboutOnelist .lianchor {
   text-decoration: none;
@@ -871,6 +871,10 @@ body {
 }
 .mareqfluid .mareqcontainer .stb-item img {
   height: 70px;
+  filter: brightness(1);
+}
+.mareqfluid .mareqcontainer .stb-item img:hover {
+  filter: brightness(1.5);
 }
 .newsletterfluid {
   background-color: #AECCC5;
@@ -993,6 +997,7 @@ body {
 }
 .footerfluid .categoryanchor:hover {
   transform: translatex(10px);
+  color: #088178;
 }
 .footerfluid .categoryanchor .chevanclass {
   height: 13px;
@@ -1023,6 +1028,81 @@ body {
 .footerfluid .copyryt .copyrightImg .logoclass {
   width: 100%;
   height: 100%;
+}
+
+.offCanvas {
+  width: 300px !important;
+}
+.offCanvas .Header {
+  padding: 20px 20px;
+}
+.offCanvas .Header .offlogo {
+  width: 100px;
+}
+.offCanvas .Header .offlogo img {
+  width: 100%;
+  height: 100%;
+}
+.offCanvas .Header .close img {
+  height: 15px;
+}
+.offCanvas .bodyoffcanvas {
+  padding: 20px 20px;
+}
+.offCanvas .bodyoffcanvas .bodycontainer .bodyul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.offCanvas .bodyoffcanvas .bodycontainer .bodyul .bodyli {
+  list-style: none;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+.offCanvas .bodyoffcanvas .bodycontainer .bodyul .bodyli .a1 .aitem {
+  border-color: #fff !important;
+}
+.offCanvas .bodyoffcanvas .bodycontainer .bodyul .bodyli .a1 .aitem .c1 .cbody {
+  padding: 5px 0px 0px 5px !important;
+}
+.offCanvas .bodyoffcanvas .bodycontainer .bodyul .bodyli .a1 .aitem .c1 .cbody .d1 {
+  padding: 6px 0;
+}
+.offCanvas .bodyoffcanvas .bodycontainer .bodyul .bodyli .bodyanchor {
+  text-decoration: none;
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+
+.accordion-body {
+  padding: 0px !important;
+}
+.accordion-body .d1 {
+  padding: 5px 0 5px 8px;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+  filter: brightness(0);
+}
+
+.accordion-item {
+  border: none !important;
 }
 
 .productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer {
@@ -1143,6 +1223,11 @@ body {
   padding: 8px 16px;
   margin-top: 10px;
   border-radius: 5px;
+  transition: 0.3s linear;
+}
+.productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .filterbtn:hover {
+  transform: translateX(10px);
+  opacity: 0.9;
 }
 .productdetailfluid .productdetailcontainer .productdetailpagerytpartcontainer .filterbtn img {
   height: 14px;
@@ -1150,12 +1235,14 @@ body {
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer {
   width: 100%;
+  height: 550px;
   overflow: hidden;
   border-radius: 5px;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .share {
   font-size: 20px;
@@ -1314,6 +1401,16 @@ body {
   font-size: 15px;
   font-weight: 500;
   border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .addcart:hover {
+  background-color: #fff;
+  border: 1px solid #088178;
+  color: #088178;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .Navpills {
+  overflow: auto hidden;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .Navpills .Navitems .Navlink {
   color: #000 !important;
@@ -1476,11 +1573,17 @@ body {
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .commentbtn {
   border: none;
-  background-color: #088178;
+  background-color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 15px 30px;
   border-radius: 5px;
+  border: 1px solid #088178;
+  color: #088178;
+  transition: 0.3s linear;
+}
+.productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .commentbtn:hover {
+  background-color: #088178;
   color: #fff;
 }
 .productdetailfluid .productdetailcontainer .packagehead {
@@ -1607,6 +1710,25 @@ body {
   border-radius: 5px;
   margin-top: 8px;
   border: none;
+}
+.productdetailfluid .productdetailcontainer .filt img {
+  height: 15px;
+  margin-right: 8px;
+}
+.productdetailfluid .productdetailcontainer .filt .flbtn {
+  background-color: #088178;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 5px;
+}
+.productdetailfluid .productdetailcontainer .filt .flbtn:hover {
+  opacity: 0.9;
+}
+.productdetailfluid.show .fllterBar {
+  transform: translateX(0) !important;
 }
 
 .mainHeadingg {
@@ -1918,26 +2040,122 @@ body {
   white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
 .ourteamfluid .ourteamcontainer .viewbtn {
-  border: none;
-  background-color: #088178;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
+  border: 2px solid #088178;
+  background-color: #fff;
   padding: 8px 16px;
+  color: #088178;
+  font-weight: 500;
   border-radius: 5px;
-  transition: 0.3s linear;
 }
 .ourteamfluid .ourteamcontainer .viewbtn:hover {
-  transform: translatey(-5px);
-  border: 1px solid;
-  border-color: #088178;
-  border-radius: 5px;
+  background-color: #088178;
+  color: #fff;
 }
 .ourteamfluid .ourteamcontainer .HeAD {
   font-size: 15px;
   font-weight: 600;
   color: #088178;
   text-align: center;
+}
+
+.CartFluid .Cartcontainer .hEaD {
+  font-size: 30px;
+  font-weight: 500;
+}
+.CartFluid .Cartcontainer .side {
+  font-size: 20px;
+  font-weight: 500;
+}
+.CartFluid .Cartcontainer .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 20px 0;
+}
+.CartFluid .Cartcontainer .cartimgggg {
+  width: 80px;
+  height: 80px;
+}
+.CartFluid .Cartcontainer .cartimgggg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.CartFluid .Cartcontainer .details .detail1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.CartFluid .Cartcontainer .details .detail2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.CartFluid .Cartcontainer .cal .minus {
+  border: none;
+  background-color: none;
+  padding: 5px 10px;
+}
+.CartFluid .Cartcontainer .cal .plus {
+  border: none;
+  background-color: none;
+  padding: 5px 10px;
+}
+.CartFluid .Cartcontainer .cal span {
+  padding: 0 5px;
+}
+.CartFluid .Cartcontainer .close img {
+  height: 15px;
+}
+.CartFluid .Cartcontainer .close img:hover {
+  cursor: pointer;
+}
+.CartFluid .Cartcontainer .bgsum {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+.CartFluid .Cartcontainer .totalitem {
+  font-size: 15px;
+  font-weight: 600;
+}
+.CartFluid .Cartcontainer .itempaise {
+  font-size: 15px;
+  font-weight: 600;
+}
+.CartFluid .Cartcontainer .shipping {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.CartFluid .Cartcontainer .dividerr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+}
+.CartFluid .Cartcontainer .totalPrice {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.CartFluid .Cartcontainer .reg .rgbtn {
+  background-color: #000;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 24px;
+  transition: 0.3s linear;
+  width: 100%;
+}
+.CartFluid .Cartcontainer .reg .rgbtn:hover {
+  background-color: white;
+  border: 1px solid #000;
+  color: #000;
+}
+.CartFluid .Cartcontainer .hh {
+  height: 50px !important;
 }
 
 @media (min-width: 576px) {
@@ -2159,11 +2377,33 @@ body {
   .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannerbtn {
     padding: 7px 14px;
   }
+  .productdetailfluid .fllterBar {
+    width: 300px !important;
+    position: absolute;
+    background: white;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.3s linear;
+  }
   .contactusfluid .contactuscontainer .leftpartdatacontainer .subheading {
     font-size: 30px;
   }
   .contactusfluid .contactuscontainer .leftpartdatacontainer .para {
     font-size: 14px;
+  }
+  .ourteamfluid .ourteamcontainer .teamdatacontainer .txt .teamname {
+    font-size: 16px;
+  }
+  .ourteamfluid .ourteamcontainer .teamdatacontainer .txt .teamdesignation {
+    font-size: 12px;
+  }
+  .ourteamfluid .ourteamcontainer .worldcontainer .dataaa {
+    margin-bottom: 15px;
+  }
+  ::-webkit-scrollbar {
+    display: none !important;
   }
 }
 @media (max-width: 767.98px) {
@@ -2214,6 +2454,9 @@ body {
   .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
     cursor: pointer;
   }
+  .productdetailfluid .productdetailcontainer .paddingcontainer .cardmainconatiner .card-img-top {
+    height: 200px !important;
+  }
   .productdetailfluid .productdetailcontainer .bannerdatacontainer {
     top: 38%;
   }
@@ -2234,7 +2477,7 @@ body {
   }
   .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
     object-fit: cover;
-    object-position: left;
+    object-position: right;
   }
   .ourteamfluid .ourteamcontainer .teamsubhead {
     font-size: 25px;
@@ -2254,6 +2497,9 @@ body {
   }
   .ourteamfluid .ourteamcontainer .teamdatacontainer .txt {
     margin-bottom: 10px;
+  }
+  .ourteamfluid .ourteamcontainer .worldcontainer .dataaa {
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 575.98px) {
@@ -2292,6 +2538,13 @@ body {
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
   }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftImgcontainer {
+    height: 370px;
+  }
+  .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .mainHeading {
+    font-size: 30px;
+    margin-top: 14px;
+  }
   .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
     cursor: pointer;
   }
@@ -2308,5 +2561,9 @@ body {
   .productdetailfluid .productdetailcontainer .bannerdatacontainer .bannertxt2 {
     font-size: 10px;
     width: 77%;
+  }
+  .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
+    object-fit: cover;
+    object-position: right !important;
   }
 }/*# sourceMappingURL=style.min.css.map */

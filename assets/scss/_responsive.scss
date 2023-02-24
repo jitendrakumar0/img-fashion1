@@ -195,6 +195,10 @@
   @include productdetailfluid-mixin-max-md();
   @include aboutuspage-mixin-max-md();
   // @include herosection-mixin-max-md();
+
+  ::-webkit-scrollbar{
+    display: none !important;
+  }
  
 
 

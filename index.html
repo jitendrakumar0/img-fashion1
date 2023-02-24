@@ -115,8 +115,16 @@
                         </div>
                         <div class="col-auto col-lg-3">
                             <div class="navEndiconscontainer d-flex align-items-center">
-                                <a href="javascript:;" class="wishlistContainer d-lg-none d-md-block">
-                                    <img src="assets/img/menuIcon.svg" alt="" srcset="">
+                                <a href="javascript:;" class="wishlistContainer d-lg-none d-md-block text-dacoration-none">
+                                    <img class="" src="assets/img/menuIcon.svg" alt="" srcset=""data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <!-- <a class="btn btn-primary" >
+                                        Link with href
+                                    </a>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    Button with data-bs-target
+                                    </button> -->
+                                    
+                                    
                                 </a>
                                 <a href="javascript:;" class="navCartcontainer">
                                     <img src="assets/img/Bag.svg" alt="" srcset="">
@@ -1845,6 +1853,85 @@
                 </div>
             </div>
         </div>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start offCanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header Header w-100">
+                <div class="row align-items-center justify-content-between w-100">
+                    <div class="col">
+                        <div class="offlogo">
+                            <img src="assets/img/fashionlogo.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-auto pe-0">
+                        <div class="close">
+                            <img src="assets/img/cross.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body bodyoffcanvas">
+                <div class="bodycontainer">
+                    <ul class="bodyul">
+                        <!-- <li class="bodyli"><a href="javascript:;" class="bodyanchor" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Home -->
+                            <div class="accordion a1" id="accordionExample">
+                                <div class="accordion-item aitem">
+                                <h2 class="accordion-header" id="headingOne">
+                                <li class="accordion-button bodyli" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Home
+                                </li>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show c1" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body cbody">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion a1" id="accordionExample1">
+                                <div class="accordion-item aitem">
+                                <h2 class="accordion-header" id="headingOne">
+                                <li class="accordion-button bodyli " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    About us
+                                </li>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show c1" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body cbody">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                            <div class="d1">data</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        <!-- <li class="bodyli"><a href="javascript:;" class="bodyanchor">About</a></li> -->
+                        <li class="bodyli"><a href="javascript:;" class="bodyanchor">Shop</a></li>
+                        <li class="bodyli"><a href="javascript:;" class="bodyanchor">Blog</a></li>
+                        <li class="bodyli"><a href="javascript:;" class="bodyanchor">Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
     </div>
     <!-- bootstrap js -->
     <script src="assets/js/gsap.js"></script>

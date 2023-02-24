@@ -134,12 +134,12 @@
                 </div>
             </div>
         </nav>
-        <div class="bodyScrollPart flex-fill h-100 overflow-y-auto">
-            <div class="container-fluid productdetailfluid">
+        <div class="bodyScrollPart flex-fill h-100 overflow-y-auto position-relative" >
+            <div class="container-fluid productdetailfluid" id="categoryPage">
                 <div class="container productdetailcontainer">
                     <div class="row pt-5">
-                        <div class="col-3 d-lg-block d-none">
-                            <div class="productdetailpagerytpartcontainer">
+                        <div class="col-3 fllterBar">
+                            <div class="productdetailpagerytpartcontainer d-none d-lg-block">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="rytHeading">Category</div>
@@ -160,9 +160,14 @@
                                 </div>
                             </div>
                             <div class="productdetailpagerytpartcontainer mt-4">
-                                <div class="row">
-                                    <div class="col-12">
+                                <div class="row align-items-center">
+                                    <div class="col">
                                         <div class="rytHeading">Fill by price</div>
+                                    </div>
+                                    <div class="col-auto d-block d-lg-none">
+                                        <div class="c" id="filterClosee">
+                                            <img src="assets/img/cross.svg" alt="" srcset="">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -217,10 +222,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="productdetailpagerytpartcontainer mt-4">
+                            <div class="productdetailpagerytpartcontainer mt-4 d-none d-lg-block">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="rytHeading">New products</div>
+                                        <div class="rytHeading ">New products</div>
                                     </div>
                                 </div>
                                 <div class="row pt-2">
@@ -293,8 +298,13 @@
                         </div>
                         <div class="col-lg-9 col-md-12">
                             <div class="row align-items-center justify-content-between pb-4">
-                                <div class="col-auto">
+                                <div class="col">
                                     <div class="mainHeadingg">MEN'S SHIRTS</div>
+                                </div>
+                                <div class="col-auto d-block d-lg-none">
+                                    <div class="filt">
+                                        <button id="filterBtn" class="flbtn"><img src="assets/img/filter.svg" alt="" srcset="">Filter</button>
+                                    </div>
                                 </div>
                                 <div class="col-auto">
                                     <select class="form-select" aria-label="Default select example">
@@ -309,7 +319,7 @@
                                 </div>
                             </div>
                             <div class="row gy-4">
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category10.jpg" class="card-img-top" alt="..."></a>
@@ -344,7 +354,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category9.jpg" class="card-img-top" alt="..."></a>
@@ -379,7 +389,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category8.jpg" class="card-img-top" alt="..."></a>
@@ -414,7 +424,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category6.jpg" class="card-img-top" alt="..."></a>
@@ -449,7 +459,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category5.jpg" class="card-img-top" alt="..."></a>
@@ -484,7 +494,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category-4.jpg" class="card-img-top" alt="..."></a>
@@ -519,7 +529,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category1.jpg" class="card-img-top" alt="..."></a>
@@ -554,7 +564,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category2.jpg" class="card-img-top" alt="..."></a>
@@ -589,7 +599,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                                     <div class="paddingcontainer">
                                         <div class="card cardmainconatiner position-relative">
                                             <a href="javascript:;"><img src="assets/img/category3.jpg" class="card-img-top" alt="..."></a>
@@ -940,7 +950,16 @@
     <script>
     </script>
     <script>
+    let filterBtn = document.getElementById('filterBtn');
+    let categoryPage = document.querySelector('#categoryPage');
+    let filterClosee = document.querySelector('#filterClosee');
 
+    filterBtn.addEventListener('click', ()=> {
+        categoryPage.classList.toggle('show')
+    })
+    filterClosee.addEventListener('click', ()=> {
+        categoryPage.classList.toggle('show')
+    })
 
     </script>
 </body>
