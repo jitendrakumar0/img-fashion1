@@ -2586,6 +2586,7 @@
                                 width: 100%;
                                 height: 250px !important;
                                 border-radius: 8px;
+                                transition: 0.3s linear;
                                 &:hover{
                                     filter: brightness(1.1);
                                 }
@@ -3440,6 +3441,10 @@
     .tabsfluid{
         & .tabsconatiner{
             & .navPills{
+                display: flex;
+                overflow-x: auto;
+                white-space: nowrap;
+                flex-wrap: nowrap;
                 & .navItem{
                     & .navLink{
                        
@@ -3543,6 +3548,9 @@
                 border-radius: 5px;
                 margin-top: 8px;
                 border:none;
+                &:hover{
+                    opacity: 0.9;
+                }
             }
         }
     }
@@ -3724,7 +3732,7 @@
                     
                 }
                 & .bannertxt2{
-                    
+                    font-size: 20px;
                 }
                 & .bannerbtn{
                    
@@ -3823,6 +3831,7 @@
         }
         & .popular{
             & .popularItem{
+                // transition: 0.3s linear;
                 & .popularcarddatacontainer{
                     width: 100%;
                     height: 100%;
@@ -3830,15 +3839,12 @@
                     border-radius: 30px;
                     border: 1px solid $gray-400;
                     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    transition: 0.3s linear;
                     & .topcontainer{
-                        &:hover{
-                            transform: scale(0.9);
-                            transition: 0.3s linear;
-                            cursor: pointer;
-                        }
+                        transition: 0.3s ease-in-out;
                         & img{
                             border-radius: 30px;
-                            transition: 0.3s all linear;
+                            display: block;
                         }
                     }
                     & .bottomtxt{
@@ -3849,10 +3855,15 @@
                         color: $green;
                     }
                 }
+                &:hover .topcontainer{
+                    transform: scale(0.9);
+                    // transition: 0.3s linear;
+                    cursor: pointer;
+                }
             }
             & .owl-nav{
                 position: absolute;
-                top: -19%;
+                top: -22%;
                 right: 0;
                 width: fit-content;
                 & button {
@@ -3862,12 +3873,18 @@
                         width: 40px;
                         height: 40px;
                         margin-right: 5px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     &.owl-next{
                         background:lighten($color: $green, $amount: 60);
                         border-radius:50%;
                         width: 40px;
                         height: 40px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
                         &:hover{
                             // background-color: $green !important;
                         }
@@ -4368,7 +4385,7 @@
     .popularfluid{
         & .popularcontainer{
             & .popularmainheading{
-               
+               font-size: 20px;
                 & span{
                  
                 }
@@ -4422,63 +4439,66 @@
             color: $green;
         }
         & .arrivals{
-            & .arrivaltopcontainer{
-                &:hover{
-                    transform: scale(0.9);
+            & .HoveR{
+                & .arrivaltopIMGcontainer{
                     transition: 0.3s linear;
-                    cursor: pointer;
+                    & img{
+                        border-radius: 30px;
+                        // transition: 0.3s all linear;
+                    }
                 }
-                & img{
-                    border-radius: 30px;
-                    transition: 0.3s all linear;
-                }
-            }
-            & .arrivalsbottomcontainer{
-                text-align: center;
-                margin-top: 10px;
-                & .productname{
-                    font-size: 15px;
-                    font-weight: 600;
-                    color: $green;
-                }
-                & .reviewcontainer{
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 5px;
+                & .arrivalsbottomcontainer{
                     text-align: center;
-                    & .starul{
-                        list-style: none;
+                    margin-top: 10px;
+                    & .productname{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $green;
+                    }
+                    & .reviewcontainer{
                         display: flex;
-                        padding: 0 !important;
-                        margin: 0 !important;
-                        display: flex;
-                        justify-content: center;
-                        width: 100%;
-                        & .starli{
-                            margin: 1px;
-                            & img{
-                                width: 15px;
-                                height: 15px;
+                        align-items: center;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        & .starul{
+                            list-style: none;
+                            display: flex;
+                            padding: 0 !important;
+                            margin: 0 !important;
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            & .starli{
+                                margin: 1px;
+                                & img{
+                                    width: 15px;
+                                    height: 15px;
+                                }
                             }
                         }
                     }
-                }
-                & .arrivaltxt{
-                    font-size: 15px;
-                    font-weight: 500;
-                    color: $black;
-                    & span{
-                        font-size: 14px;
-                        color: $gray-600;
-                        margin-left: 8px;
+                    & .arrivaltxt{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: $black;
+                        & span{
+                            font-size: 14px;
+                            color: $gray-600;
+                            margin-left: 8px;
+                        }
                     }
                 }
+                &:hover .arrivaltopIMGcontainer{
+                    transform: scale(0.9);
+                    cursor: pointer;
+                }
             }
+            
         }
     }
     & .owl-nav{
         position: absolute;
-        top: -19%;
+        top: -22%;
         right: 0;
         width: fit-content;
         & button {
@@ -4488,12 +4508,18 @@
                 width: 40px;
                 height: 40px;
                 margin-right: 5px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
             }
             &.owl-next{
                 background:lighten($color: $green, $amount: 60);
                 border-radius:50%;
                 width: 40px;
                 height: 40px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 &:hover{
                     // background-color: $green !important;
                 }
@@ -5131,7 +5157,7 @@
     .arrivalsfluid{
         & .arrivalscontainer{
             & .popularmainheading{
-                
+                font-size: 20px;
             }
             & .arrivals{
                 & .arrivaltopcontainer{
@@ -5501,6 +5527,7 @@
         & .imageparent{
             width: 100%;
             height: 100%;
+            transition: 0.3s linear;
             &:hover{
                 filter: brightness(1.1);
                 cursor: pointer;
@@ -6180,7 +6207,7 @@
         }
         & .blogindexContainer{
             & .imageparent{
-               
+                 height: 135px;
                 &:hover{
                     
                 }
@@ -6318,7 +6345,6 @@
 @mixin blogindexFluid-mixin-max-xs(){
     .blogindexFluid{
         & .popularmainheading{
-            
         }
         & .blogindexContainer{
             & .imageparent{
@@ -6332,13 +6358,13 @@
             }
             & .txtParent{
                 & .txtt1{
-                    
+                    font-size: 12px;
                 }
                 & .txtt2{
-                   
+                    font-size: 12px;
                 }
                 & .txtt3{
-                    
+                    font-size: 12px;
                 }
                 & .blogAnchor{
                     
@@ -6426,6 +6452,7 @@
         & .colAutoimgcontainer{
             width: 100%;
             height: 100%;
+            transition: 0.3s linear;
             &:hover{
                 cursor: pointer;
                 filter: brightness(1.1);
@@ -6986,6 +7013,7 @@
         // margin-right: 10rem;
         & img {
             height: 70px;
+            transition: 0.3s linear;
             filter: brightness(1);
             &:hover{
             filter: brightness(1.5);
@@ -8764,7 +8792,7 @@
     flex-shrink: 0;
     width: 20px !important;
     height: 20px !important;
-    margin-left: auto;
+    margin-right: 10px;
     content: "";
     background-image: var(--bs-accordion-btn-icon);
     background-repeat: no-repeat;
@@ -8775,4 +8803,6 @@
 .accordion-item {
     border: none !important;
 }
+
+
 

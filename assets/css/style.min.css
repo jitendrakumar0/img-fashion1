@@ -40,6 +40,22 @@
   font-style: normal;
   font-display: swap;
 }
+.loading.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url(../img/loding.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 body {
   font-family: "Rubik", sans-serif;
 }
@@ -408,6 +424,7 @@ body {
   width: 100%;
   height: 250px !important;
   border-radius: 8px;
+  transition: 0.3s linear;
 }
 .tabsfluid .tabsconatiner .tabscontent .tab1maincontainer .tab1datacontainer .paddingcontainer .cardmainconatiner .card-img-top:hover {
   filter: brightness(1.1);
@@ -518,6 +535,9 @@ body {
   margin-top: 8px;
   border: none;
 }
+.bannerfluid .bannercontainer .bannerdatacontainer .bannerbtn:hover {
+  opacity: 0.9;
+}
 
 .popularfluid .popularcontainer .popularmainheading {
   font-size: 30px;
@@ -536,15 +556,14 @@ body {
   border-radius: 30px;
   border: 1px solid #ced4da;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-.popularfluid .popularcontainer .popular .popularItem .popularcarddatacontainer .topcontainer:hover {
-  transform: scale(0.9);
   transition: 0.3s linear;
-  cursor: pointer;
+}
+.popularfluid .popularcontainer .popular .popularItem .popularcarddatacontainer .topcontainer {
+  transition: 0.3s ease-in-out;
 }
 .popularfluid .popularcontainer .popular .popularItem .popularcarddatacontainer .topcontainer img {
   border-radius: 30px;
-  transition: 0.3s all linear;
+  display: block;
 }
 .popularfluid .popularcontainer .popular .popularItem .popularcarddatacontainer .bottomtxt {
   font-size: 15px;
@@ -553,9 +572,13 @@ body {
   margin: 8px 0 0 0;
   color: #198754;
 }
+.popularfluid .popularcontainer .popular .popularItem:hover .topcontainer {
+  transform: scale(0.9);
+  cursor: pointer;
+}
 .popularfluid .popularcontainer .popular .owl-nav {
   position: absolute;
-  top: -19%;
+  top: -22%;
   right: 0;
   width: fit-content;
 }
@@ -565,12 +588,18 @@ body {
   width: 40px;
   height: 40px;
   margin-right: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .popularfluid .popularcontainer .popular .owl-nav button.owl-next {
   background: #daf8ea;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .popularfluid .popularcontainer .popular .owl-nav .arrowimgp {
   width: 15px;
@@ -582,31 +611,28 @@ body {
   font-weight: 600;
   color: #198754;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivaltopcontainer:hover {
-  transform: scale(0.9);
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivaltopIMGcontainer {
   transition: 0.3s linear;
-  cursor: pointer;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivaltopcontainer img {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivaltopIMGcontainer img {
   border-radius: 30px;
-  transition: 0.3s all linear;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer {
   text-align: center;
   margin-top: 10px;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .productname {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .productname {
   font-size: 15px;
   font-weight: 600;
   color: #198754;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .reviewcontainer {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .reviewcontainer {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
   text-align: center;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .reviewcontainer .starul {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .reviewcontainer .starul {
   list-style: none;
   display: flex;
   padding: 0 !important;
@@ -615,26 +641,30 @@ body {
   justify-content: center;
   width: 100%;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .reviewcontainer .starul .starli {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .reviewcontainer .starul .starli {
   margin: 1px;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .reviewcontainer .starul .starli img {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .reviewcontainer .starul .starli img {
   width: 15px;
   height: 15px;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .arrivaltxt {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .arrivaltxt {
   font-size: 15px;
   font-weight: 500;
   color: #000;
 }
-.arrivalsfluid .arrivalscontainer .arrivals .arrivalsbottomcontainer .arrivaltxt span {
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR .arrivalsbottomcontainer .arrivaltxt span {
   font-size: 14px;
   color: #6c757d;
   margin-left: 8px;
 }
+.arrivalsfluid .arrivalscontainer .arrivals .HoveR:hover .arrivaltopIMGcontainer {
+  transform: scale(0.9);
+  cursor: pointer;
+}
 .arrivalsfluid .owl-nav {
   position: absolute;
-  top: -19%;
+  top: -22%;
   right: 0;
   width: fit-content;
 }
@@ -644,12 +674,18 @@ body {
   width: 40px;
   height: 40px;
   margin-right: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .arrivalsfluid .owl-nav button.owl-next {
   background: #daf8ea;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .arrivalsfluid .owl-nav .arrowimga {
   width: 15px;
@@ -693,6 +729,7 @@ body {
 .blogindexFluid .blogindexContainer .imageparent {
   width: 100%;
   height: 100%;
+  transition: 0.3s linear;
 }
 .blogindexFluid .blogindexContainer .imageparent:hover {
   filter: brightness(1.1);
@@ -827,6 +864,7 @@ body {
 .IndexBottomfluid .indexBottomcontainer .colAutoimgcontainer {
   width: 100%;
   height: 100%;
+  transition: 0.3s linear;
 }
 .IndexBottomfluid .indexBottomcontainer .colAutoimgcontainer:hover {
   cursor: pointer;
@@ -871,6 +909,7 @@ body {
 }
 .mareqfluid .mareqcontainer .stb-item img {
   height: 70px;
+  transition: 0.3s linear;
   filter: brightness(1);
 }
 .mareqfluid .mareqcontainer .stb-item img:hover {
@@ -1092,7 +1131,7 @@ body {
   flex-shrink: 0;
   width: 20px !important;
   height: 20px !important;
-  margin-left: auto;
+  margin-right: 10px;
   content: "";
   background-image: var(--bs-accordion-btn-icon);
   background-repeat: no-repeat;
@@ -1388,6 +1427,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: normal;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .inpppppp:checked ~ .size {
   background-color: #088178;
@@ -1558,6 +1598,7 @@ body {
   border-radius: 5px;
   border: 1px solid;
   font-size: 15px;
+  width: 100%;
 }
 .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .tabContentss .tab3data .txtarea:focus {
   outline: 1px solid #088178 !important;
@@ -2046,6 +2087,7 @@ body {
   color: #088178;
   font-weight: 500;
   border-radius: 5px;
+  transition: 0.3s linear;
 }
 .ourteamfluid .ourteamcontainer .viewbtn:hover {
   background-color: #088178;
@@ -2090,17 +2132,25 @@ body {
   font-weight: 500;
 }
 .CartFluid .Cartcontainer .cal .minus {
-  border: none;
+  border: 1px solid #ced4da;
   background-color: none;
   padding: 5px 10px;
+  background-color: transparent !important;
 }
 .CartFluid .Cartcontainer .cal .plus {
-  border: none;
+  border: 1px solid #ced4da;
   background-color: none;
   padding: 5px 10px;
+  background-color: transparent !important;
 }
 .CartFluid .Cartcontainer .cal span {
   padding: 0 5px;
+}
+.CartFluid .Cartcontainer .rupee {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  margin-top: 30px;
 }
 .CartFluid .Cartcontainer .close img {
   height: 15px;
@@ -2253,6 +2303,12 @@ body {
   .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
     cursor: pointer;
   }
+  .CartFluid .Cartcontainer .rupee {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 1299.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
@@ -2279,6 +2335,12 @@ body {
   .productdetailfluid .productdetailcontainer .productdetailLeftpartcontainer .leftpartcol7datacontainer .gola {
     cursor: pointer;
   }
+  .CartFluid .Cartcontainer .rupee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 1199.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
@@ -2298,6 +2360,9 @@ body {
   }
   .heroSection .heroSlideBox .heroSlide .shopBtn {
     font-size: 14px;
+  }
+  .bannerfluid .bannercontainer .bannerdatacontainer .bannertxt2 {
+    font-size: 20px;
   }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
@@ -2328,6 +2393,16 @@ body {
   .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
     object-fit: cover;
     object-position: left;
+  }
+  .CartFluid .Cartcontainer .rupee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .CartFluid .Cartcontainer .cal {
+    display: flex;
+    align-items: center;
   }
 }
 @media (max-width: 991.98px) {
@@ -2361,6 +2436,9 @@ body {
   }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
+  }
+  .blogindexFluid .blogindexContainer .imageparent {
+    height: 135px;
   }
   .blogindexFluid .blogindexContainer .blogrytimgcontainer {
     height: 300px;
@@ -2401,6 +2479,12 @@ body {
   }
   .ourteamfluid .ourteamcontainer .worldcontainer .dataaa {
     margin-bottom: 15px;
+  }
+  .CartFluid .Cartcontainer .rupee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
   }
   ::-webkit-scrollbar {
     display: none !important;
@@ -2501,6 +2585,25 @@ body {
   .ourteamfluid .ourteamcontainer .worldcontainer .dataaa {
     margin-bottom: 15px;
   }
+  .CartFluid .Cartcontainer .cal {
+    display: flex;
+  }
+  .CartFluid .Cartcontainer .cal .minus {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+  }
+  .CartFluid .Cartcontainer .cal .plus {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+  }
 }
 @media (max-width: 575.98px) {
   .fashionNavbar .fashionHeader .navDiv .navUl .navLi .navAnchor {
@@ -2532,8 +2635,29 @@ body {
     font-size: 10px;
     padding: 5px 10px;
   }
+  .tabsfluid .tabsconatiner .navPills {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .popularfluid .popularcontainer .popularmainheading {
+    font-size: 20px;
+  }
+  .arrivalsfluid .arrivalscontainer .popularmainheading {
+    font-size: 20px;
+  }
   .offerbannerfluid .offerbannnercontainer:hover {
     cursor: pointer;
+  }
+  .blogindexFluid .blogindexContainer .txtParent .txtt1 {
+    font-size: 12px;
+  }
+  .blogindexFluid .blogindexContainer .txtParent .txtt2 {
+    font-size: 12px;
+  }
+  .blogindexFluid .blogindexContainer .txtParent .txtt3 {
+    font-size: 12px;
   }
   .mareqfluid .mareqcontainer .stb-item {
     display: inline-block;
@@ -2565,5 +2689,73 @@ body {
   .contactusfluid .contactuscontainer .rytpartdatacontainer .rytimgcontainer img {
     object-fit: cover;
     object-position: right !important;
+  }
+  .ourteamfluid .ourteamcontainer .leftmainhead {
+    font-size: 20px;
+  }
+  .CartFluid .Cartcontainer .hEaD {
+    font-size: 20px;
+  }
+  .CartFluid .Cartcontainer .side {
+    font-size: 15px;
+  }
+  .CartFluid .Cartcontainer .cartimgggg {
+    width: 60px;
+    height: 60px;
+  }
+  .CartFluid .Cartcontainer .cartimgggg img {
+    object-fit: cover;
+  }
+  .CartFluid .Cartcontainer .details .detail1 {
+    font-size: 15px;
+  }
+  .CartFluid .Cartcontainer .details .detail2 {
+    font-size: 12px;
+  }
+  .CartFluid .Cartcontainer .details .rs {
+    font-size: 12px;
+  }
+  .CartFluid .Cartcontainer .cal {
+    display: flex;
+    padding: 10px;
+  }
+  .CartFluid .Cartcontainer .cal .minus {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+  }
+  .CartFluid .Cartcontainer .cal .plus {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CartFluid .Cartcontainer .cal span {
+    font-size: 12px;
+  }
+  .CartFluid .Cartcontainer .rupee {
+    font-size: 12px;
+  }
+  .CartFluid .Cartcontainer .close img {
+    height: 12px;
+  }
+  .CartFluid .Cartcontainer .totalitem {
+    font-size: 14px;
+  }
+  .CartFluid .Cartcontainer .itempaise {
+    font-size: 12px;
+  }
+  .CartFluid .Cartcontainer .shipping {
+    font-size: 12px;
+  }
+  .CartFluid .Cartcontainer .totalPrice {
+    font-size: 15px;
+  }
+  .CartFluid .Cartcontainer .form-select {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.min.css.map */

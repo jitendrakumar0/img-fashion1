@@ -212,6 +212,7 @@
             color: $theme1;
             font-weight: 500;
             border-radius: 5px;
+            transition: 0.3s linear;
             &:hover{
             background-color: $theme1;
             color: $white;
@@ -1723,7 +1724,7 @@
     .ourteamfluid{
         & .ourteamcontainer{
             & .leftmainhead{
-               
+                font-size: 20px;
             }
             & .teamsubhead{
                
@@ -1881,18 +1882,26 @@
         }
         & .cal{
             & .minus{
-                border: none;
+                border: 1px solid $gray-400;
                 background-color: none;
                 padding: 5px 10px;
+                background-color: transparent !important;
             }
             & .plus{
-                border: none;
+                border: 1px solid $gray-400;
                 background-color: none;
                 padding: 5px 10px;
+                background-color: transparent !important;
             }
             & span{
                 padding: 0 5px;
             }
+        }
+        & .rupee{
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center;
+            margin-top: 30px;
         }
         & .close{
             & img{
@@ -1955,3 +1964,911 @@
         }
     }
 }
+
+@mixin CartFluid-mixin-min-sm(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-min-md(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-min-lg(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-min-xl(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-min-xxl(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-max-xl(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .rupee{
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center;
+                margin-top: 30px;
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-max-1300(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .rupee{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-max-lg(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .rupee{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            & .cal{
+                display: flex;
+                align-items: center;
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-max-md(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{
+                & .minus{
+                    
+                }
+                & .plus{
+                    
+                }
+                & span{
+                   
+                }
+            }
+            & .rupee{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-max-sm(){
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+            
+            }
+            & .side{
+               
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                
+                & img{
+                   
+                }
+            }
+            & .details{
+                & .detail1{
+                    
+                }
+                & .detail2{
+                    
+                }
+            }
+            & .cal{ 
+                display: flex;
+                & .minus{
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: normal;
+                }
+                & .plus{
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: normal;
+                }
+                & span{
+                   
+                }
+            }
+            & .close{
+                & img{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                
+            }
+            & .itempaise{
+               
+            }
+            & .shipping{
+                
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+               
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+        }
+    }
+}
+@mixin CartFluid-mixin-max-xs(){    
+    .CartFluid{
+        & .Cartcontainer{
+            & .hEaD{
+                font-size: 20px;
+            }
+            & .side{
+                font-size: 15px;
+            }
+            & .divider{
+               
+            }
+            & .cartimgggg{
+                width: 60px;
+                height: 60px;
+                & img{
+                    object-fit: cover;
+                }
+            }
+            & .details{
+                & .detail1{
+                    font-size: 15px;
+                }
+                & .detail2{
+                    font-size: 12px;
+                }
+                & .rs{
+                    font-size: 12px;
+                }
+            }
+            & .cal{
+                display: flex;
+                padding: 10px;
+                & .minus{
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: normal;
+                }
+                & .plus{
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                & span{
+                    font-size: 12px;
+                }
+            }
+            & .rupee{
+                font-size: 12px;
+            }
+            & .close{
+                & img{
+                    height: 12px;
+                    &:hover{
+                        
+                    }
+                }
+            }
+            & .bgsum{
+               
+            }
+            & .totalitem{
+                font-size: 14px;
+            }
+            & .itempaise{
+                font-size: 12px;
+            }
+            & .shipping{
+                font-size: 12px;
+            }
+            .dividerr{
+                
+            }
+            & .totalPrice{
+                font-size: 15px;
+            }
+            & .reg{
+                & .rgbtn{
+                    
+                    &:hover{
+                        
+                    }
+                }
+            }
+            .hh{
+               
+            }
+            & .form-select{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+

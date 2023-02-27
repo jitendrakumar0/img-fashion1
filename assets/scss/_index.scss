@@ -297,6 +297,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    line-height: normal;
                 }
                 & .inpppppp{
                     &:checked{
@@ -487,6 +488,7 @@
                         border-radius: 5px;
                         border: 1px solid;
                         font-size: 15px;
+                        width: 100%;
                         &:focus{
                             outline: 1px solid $theme1 !important;
                             // p.ex3 {outline: 5px solid yellow;}

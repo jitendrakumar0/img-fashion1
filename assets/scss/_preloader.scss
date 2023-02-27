@@ -1,0 +1,17 @@
+.loading{
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        background-image: url(../img/loding.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+}

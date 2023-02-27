@@ -1,40 +1,44 @@
-
+$(window).on('load', function () {
+    setTimeout(function () {
+        $('.loading').fadeOut('active');
+    }, 100);
+  });
 
 
 // Home page hero slider
 
-$('.homeSlider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots: false,
-    responsive:{
-        0: {
-            items: 1,
-        },
-        576: {
-            items: 1,
-        },
-        768: {
-            items: 1,
-        },
-        992: {
-            items: 1,
-        },
-        1200: {
-            items: 1,
-            nav: true,
-        },
-    },
-    navText: ["<img class='arrowimg' src='./assets/img/icons8-chevron-left-30.png' class='img-fluid'>","<img class='arrowimg' src='./assets/img/icons8-chevron-right-30.png'>"],
-});
+// $('.homeSlider').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     dots: false,
+//     responsive:{
+//         0: {
+//             items: 1,
+//         },
+//         576: {
+//             items: 1,
+//         },
+//         768: {
+//             items: 1,
+//         },
+//         992: {
+//             items: 1,
+//         },
+//         1200: {
+//             items: 1,
+//             nav: true,
+//         },
+//     },
+//     navText: ["<img class='arrowimg' src='./assets/img/icons8-chevron-left-30.png' class='img-fluid'>","<img class='arrowimg' src='./assets/img/icons8-chevron-right-30.png'>"],
+// });
 
 // Popular category slider
 $('.popular').owlCarousel({
     loop: true,
     items: 10,
     margin: 20,
-    nav: true,
+    nav: false,
     dots: false,
     center: false,
     freeDrag: false,
@@ -57,13 +61,13 @@ $('.popular').owlCarousel({
         },
         992: {
             items: 5,
+            nav: true,
         },
         1200: {
             items: 6,
             nav: true,
         },
     },
-    navText: ["", ""]
 });
 
 // new arrivals slider
@@ -72,7 +76,7 @@ $('.arrivals').owlCarousel({
     loop: true,
     items: 10,
     margin: 20,
-    nav: true,
+    nav: false,
     dots: false,
     center: false,
     freeDrag: false,
@@ -95,13 +99,13 @@ $('.arrivals').owlCarousel({
         },
         992: {
             items: 5,
+            nav: true,
         },
         1200: {
             items: 6,
             nav: true,
         },
     },
-    navText: ["", ""]
 });
 
 
